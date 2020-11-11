@@ -1,3 +1,6 @@
 django_2.2
 sources.txt
+*.pyc
+__pycache__
+db.sqlite3
 
