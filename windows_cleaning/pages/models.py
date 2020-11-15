@@ -6,3 +6,6 @@ class Page(models.Model):
     permalink = models.CharField(max_length=12, unique=True)
     update_date = models.DateTimeField('Last updated')
     body_text = models.TextField('Page content', blank=True)
+
+    def __str__(self):
+        return self.permalink
