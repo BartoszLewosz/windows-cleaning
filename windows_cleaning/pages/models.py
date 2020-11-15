@@ -8,4 +8,4 @@ class Page(models.Model):
     body_text = models.TextField('Page content', blank=True)
 
     def __str__(self):
-        return self.permalink
+        return self.title
