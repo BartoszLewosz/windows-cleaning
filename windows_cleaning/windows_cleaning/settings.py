@@ -55,7 +55,8 @@ ROOT_URLCONF = 'windows_cleaning.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': 
+        [os.path.join(BASE_DIR, 'windows_cleaning/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
