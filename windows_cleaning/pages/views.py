@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 def index(request):
     #return HttpResponse("<h1>Windows Cleaning Homepage</h1>")
-    return render(request, 'base.html')
+    return render(request, 'pages/page.html')
