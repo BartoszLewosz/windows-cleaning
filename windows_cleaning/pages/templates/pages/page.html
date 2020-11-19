@@ -10,4 +10,8 @@
 <h4>This is the page template!</h4>
 {{ content }}
 {% endautoescape %}
+
+<p>
+    Page last updated: {{ last_updated|date:'l, dS F Y' }}
+</p>
 {% endblock content %}
