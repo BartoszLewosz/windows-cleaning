@@ -8,8 +8,9 @@ def index(request, pagename):
     pg = Page.objects.get(permalink=pagename)
     context = {
         'title': pg.title,
+        'permalink': pg.permalink,
         'content': pg.body_text,
         'last_updated': pg.update_date,
     }
-    # assert False
+    # assert False - uncomment to see error page and check local vars
     return render(request, 'pages/page.html', context)
