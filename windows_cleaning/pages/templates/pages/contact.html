@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'pages/page.html' %}
 
 {% block title %}
 <h1>Contact me</h1>
@@ -6,7 +6,7 @@
 
 {% block content %}
 {% if submited %}
-<p class="succes">
+<p class="success">
     Your message was submited successfully. <br>Thank you
 </p>
 {% else %}

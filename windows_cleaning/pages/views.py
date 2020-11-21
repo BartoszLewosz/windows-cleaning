@@ -22,13 +22,13 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            #assert False
+            # assert False
             return HttpResponseRedirect('/contact?submitted=True')
     else:
         form = ContactForm()
         if 'submitted' in request.GET:
             submitted = True
 
-    return render(request, 'pages/contanct.html', {
+    return render(request, 'pages/contact.html', {
         'form': form, 'page_list': Page.objects.all(), 'submitted': submitted})
     
