@@ -1,83 +1,13 @@
-@charset "utf-8";
-#header {
-    border-style: none;
-    width: 800px;
-    height: auto;
-}
-
-#wrapper {
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-    width: 800px;
-}
-
-body {
-    background-color: magenta;
-    font-family: Gotham, "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 19em;
-    text-align: justify;
-    color: #474747;
-}
- .test {
-     background-color: violet;
- }
-
-#footer {
-    text-align: center;
-    font-size: .6em;
-    margin-top: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #ffffff;
-    border-top: thin solid #bbbbbb;
-    clear: both;
-    color: #969696;
-}
-
-#nav li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1em;
-    list-style-type: none;
-    border-bottom: thin solid #5f5f5f;
-    color: #4c4c4c;
-    left: 0px;
-    list-style-position: inside;
-    margin-left: -10px;
-}
-
-#nav li a {
-    text-decoration: none;
-}
-
-#left-sidebar {
-    width: 180px;
-    height: 350px;
-    float: left;
-}
-
-#main {
-    float: left;
-    margin-left: 20px;
-    margin-right: 10px;
-    padding-right: 10px;
-}
-
-#logo {
-    padding: 10px;
-}
 
 ul.errorlist {
-    margin: 0;
+    margin: 0; 
     padding: 0;
 }
 
 .errorlist li {
     border: 1px solid red;
     color: red;
-    background: rgba(255, 0, 0, 0.15);
+    background: rgba(255, 0, 0, .15);
     list-style-position: inside;
     display: block;
     font-size: 1.2em;
@@ -93,10 +23,10 @@ input, textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 3px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(169,169,169)
+    border-radius: 3px;
+    border-color: rgb(169, 169, 169);
 }
 
 input {
@@ -104,7 +34,7 @@ input {
 }
 
 .success {
-    background-color: rgba(0, 128, 0, 0.15);
+    background-color: rgba(0, 128, 0, .15);
     padding: 10px;
     text-align: center;
     color: green;
