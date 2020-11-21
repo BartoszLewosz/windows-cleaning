@@ -4,31 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        {% block title %}
+        Document
+        {% endblock title %}
+    </title>
     <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <p class="test">this is static test</p>
     <div id="wrapper">
         <header id="header">
             <div id="logo">
-                <img src="{% static 'window.png' %}" alt="logo">
+                <img src="{% static 'window.png' %}" alt="logo.">
             </div>
             <div id="topbanner">
-                <img src="{% static 'top_banner.png' %}" width="800" height="200" alt="top banner.">
+                <img src="{% static 'top_banner.jpg' %}" width="800" height="200" alt="top banner.">
             </div>
             </header>
                 <aside id="left-sidebar">
                     <nav id="nav">
                         <ul>
-                            <li>menu 1</li>
-                            <li>menu 2</li>
-                            <li>menu 3</li>
+                            {% block sidenav %}
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                            {% endblock sidenav %}
+                            <li><a href="/contact">Contact me</a></li>
                         </ul>
                     </nav>
                 </aside>
                 <section id="main">
+                    {% block content %}
                     <h1>Welcome!</h1>
                     <p>This is the article/template</p>
+                    {% endblock content %}
                 </section>
                 <footer id="footer">Cpyright &copy; 2020 devbar.tech</footer>
     </div>
