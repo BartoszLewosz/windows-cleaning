@@ -40,4 +40,3 @@ def contact(request):
 
     return render(request, 'pages/contact.html', {
         'form': form, 'page_list': Page.objects.all(), 'submitted': submitted})
-    
