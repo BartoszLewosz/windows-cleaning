@@ -4,3 +4,5 @@ sources.txt
 __pycache__
 db.sqlite3
 uploads
+dist
+node_modules
