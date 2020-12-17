@@ -36,9 +36,7 @@
                 </div>
             </section>
         <ul>
-            {% block sidenav %}
-            
-            {% endblock sidenav %}
+           
             <li><a href="/contact">Contact me</a></li>
             <li><a href="/quote/">Get a quote</a></li>
         </ul>
@@ -47,6 +45,20 @@
         <p>This is the article/template</p>
         {% endblock content %}
     </main>
+
+    <ul>
+        {% block sidenav %}
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        {% endblock sidenav %}
+        <li><a href="/contact">Contact me</a></li>
+        <li><a href="/quote/">Get a quote</a></li>
+    </ul>
+</nav>
+</aside>
+<section id="main">
+
 </body>
 <!-- <body>
     <p class="test">this is static test</p>
@@ -65,6 +77,8 @@
                     </nav>
                 </aside>
                 <section id="main">
+
+
                    
                 </section>
                 <footer id="footer">Cpyright &copy; 2020 devbar.tech</footer>
