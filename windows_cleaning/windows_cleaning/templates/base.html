@@ -12,7 +12,19 @@
     <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <p>Start here -->></p>
+    <main class="main">
+        {% block hero %}
+            <section class="hero">
+                <header class="hero__title">Windows Cleaning</header>
+                <picture class="hero__background">
+                    <img src="{% static 'Rectangle 7.png' %}" alt="" srcset="">    
+                </picture>
+                <div class="hero__menu">
+                    <img src="{% static 'hero-menu.png' %}" alt="menu." srcset="">
+                </div>
+            </section>
+        {% endblock hero %}
+    </main>
 </body>
 <!-- <body>
     <p class="test">this is static test</p>
