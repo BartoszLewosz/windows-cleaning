@@ -1,8 +1,17 @@
 {% extends 'pages/page.html' %}
+{% load static %}
 
 {% block title %}
 <h1>Contact me</h1>
 {% endblock title %}
+
+{% block hero %}
+<picture class="hero__background">
+    <img src="{% static 'top_banner.jpg' %}" alt="logo." srcset="">
+</picture>
+{% endblock hero %}
+
+
 
 {% block content %}
 {% if submitted %}
