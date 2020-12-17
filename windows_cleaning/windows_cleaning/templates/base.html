@@ -13,17 +13,30 @@
 </head>
 <body>
     <main class="main">
-        {% block hero %}
             <section class="hero">
                 <header class="hero__title">Windows Cleaning</header>
+
+                {% block hero %}
                 <picture class="hero__background">
-                    <img src="{% static 'Rectangle 7.png' %}" alt="" srcset="">    
+                    <img src="{% static 'Rectangle 7.png' %}" alt="" srcset="">
                 </picture>
+                {% endblock hero %}
+
                 <div class="hero__menu">
                     <img src="{% static 'hero-menu.png' %}" alt="menu." srcset="">
                 </div>
             </section>
-        {% endblock hero %}
+        <ul>
+            {% block sidenav %}
+            
+            {% endblock sidenav %}
+            <li><a href="/contact">Contact me</a></li>
+            <li><a href="/quote/">Get a quote</a></li>
+        </ul>
+        {% block content %}
+        <h1>Welcome!</h1>
+        <p>This is the article/template</p>
+        {% endblock content %}
     </main>
 </body>
 <!-- <body>
@@ -39,22 +52,11 @@
             </header>
                 <aside id="left-sidebar">
                     <nav id="nav">
-                        <ul>
-                            {% block sidenav %}
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                            {% endblock sidenav %}
-                            <li><a href="/contact">Contact me</a></li>
-                            <li><a href="/quote/">Get a quote</a></li>
-                        </ul>
+                        
                     </nav>
                 </aside>
                 <section id="main">
-                    {% block content %}
-                    <h1>Welcome!</h1>
-                    <p>This is the article/template</p>
-                    {% endblock content %}
+                   
                 </section>
                 <footer id="footer">Cpyright &copy; 2020 devbar.tech</footer>
     </div>

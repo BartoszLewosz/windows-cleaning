@@ -1,8 +1,15 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 {{ title }}
 {% endblock title %}
+
+{% block hero %}
+<picture class="hero__background">
+    <img src="{% static 'top_banner.jpg' %}" alt="" srcset="">
+</picture>
+{% endblock hero %}
 
 {% block sidenav %}
 {% for page in page_list %}
