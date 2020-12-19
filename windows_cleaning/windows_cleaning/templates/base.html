@@ -39,9 +39,20 @@
             </div>
         </section>
         <section class="nav">
-            <div class="nav__element">
-                
-            </div>
+            <nav class="nav__element">
+                <div class="nav__about">
+                    About
+                </div>
+                <div class="nav__services">
+                    Services
+                </div>
+                <div class="nav__contact">
+                    Contact
+                </div>
+                <div class="nav__quote">
+                    Quote
+                </div>
+            </nav>
         </section>
         <ul>
 
@@ -60,6 +71,7 @@
         <li>
             <a href="{{ page.permalink }}">{{ page.title }}</a>
         </li>
+        
         {% endfor %}
         {% endblock sidenav %}
       
