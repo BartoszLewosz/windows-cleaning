@@ -22,7 +22,7 @@
 
             <div class="hero__menu">
                 <picture class="hero__background">
-                    
+
                 </picture>
                 <img src="{% static 'hero-menu.png' %}" alt="menu." srcset="">
             </div>
@@ -46,7 +46,7 @@
             <div class="nav__home"><a href="{{ page.permalink }}">{{ page.title }}</a></div>
             {% endfor %}
             {% endblock sidenav %}
-            
+
             <nav class="nav__element">
                 <div class="nav__about">
                     <header class="nav__about--header">About</header>
@@ -61,7 +61,8 @@
                         <li class="nav__services--list-item">Gutters, fascias & soffits</li>
                         <li class="nav__services--list-item">UPVC cladding</li>
                         <li class="nav__services--list-item">Builders clean</li>
-                        <li class="nav__services--list-item">Glass restoration (removal of hard water deposits, alkali residues, haze & other atmospheric pollutents)</li>
+                        <li class="nav__services--list-item">Glass restoration (removal of hard water deposits, alkali
+                            residues, haze & other atmospheric pollutents)</li>
                     </ul>
                 </div>
                 <div class="nav__contact"><a href="/contact"> Contact</a></div>
@@ -74,12 +75,17 @@
 
         <footer class="footer">
             <ul class="footer__contact">
-                        <li class="footer__phone"><a href="tel:++44 77069 35402"><img src="" alt="phone." srcset=""></a></li>
-                        <li class="footer__email"><a href="mailto:olgierd2002@yahoo.com"><img src="" alt="email."
-                            srcset=""></a></li>
+                <li class="footer__phone"><a href="tel:++44 77069 35402"><img src="" alt="phone." srcset=""></a></li>
+                <li class="footer__email"><a href="mailto:olgierd2002@yahoo.com"><img src="" alt="email." srcset=""></a>
+                </li>
             </ul>
-            <div class="footer__icons"><img src="" alt="window-icons." srcset=""></div>
-            <p class="footer__author">Made by <a class="footer__link" href="https://bartoszlewosz.github.io">©Bartosz Lewosz</a></p>
+            <div class="footer__icons">
+                <picture class="footer__window-icons">
+                    <img src="../static/footer-icons.svg" alt="window-icons." srcset="">
+                </picture>
+            </div>
+            <p class="footer__author">Made by <a class="footer__link" href="https://bartoszlewosz.github.io">©Bartosz
+                    Lewosz</a></p>
             <p class="footer__privacy-policy"><a href="#">privacy policy</a></p>
             <p class="footer__sources">sources</p>
         </footer>
