@@ -1,0 +1,10 @@
+$primary-color: blueviolet;
+$sec-color: lime;
+
+body {
+    color: $primary-color;
+}
+
+.hero__title {
+    color: $sec-color;
+}
