@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+.hero {
+  background: brown;
+  color: chartreuse;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -10,5 +15,5 @@ html {
 }
 
 body {
-  font-family: Ubuntu;
+  color: chartreuse;
 }
