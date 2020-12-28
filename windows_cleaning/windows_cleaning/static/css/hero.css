@@ -1,3 +1,9 @@
 .hero {
   background: crimson;
 }
+
+.hero__background--image {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
