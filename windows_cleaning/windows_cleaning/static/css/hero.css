@@ -1,9 +1,6 @@
 .hero {
-  background: crimson;
-}
-
-.hero__background--image {
-  width: 100%;
-  top: 0;
-  left: 0;
+  background: url("../assets/hero-dark.jpg") no-repeat center center;
+  max-width: 100%;
+  background-size: cover;
+  min-height: 30em;
 }
