@@ -379,8 +379,8 @@ template {
   text-align: center;
 }
 
-.nav__about {
-  background-color: lightgreen;
+.nav__content {
+  text-align: center;
 }
 
 .nav__services {
