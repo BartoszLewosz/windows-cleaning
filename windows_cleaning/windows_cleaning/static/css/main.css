@@ -368,6 +368,26 @@ template {
   padding: 0;
 }
 
+.nav__about {
+  background-color: lightgreen;
+}
+
+.nav__about--header {
+  font-size: 1.5rem;
+}
+
+.nav__services {
+  background-color: lightpink;
+}
+
+.nav__quote {
+  background-color: lightseagreen;
+}
+
+.nav__contact {
+  background-color: lightsteelblue;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
