@@ -1,0 +1,17 @@
+.nav {
+    &__about {
+        background-color: lightgreen;
+        &--header {
+            font-size: 1.5rem;
+        }
+    }
+    &__services {
+        background-color: lightpink;
+    }
+    &__quote {
+        background-color: lightseagreen;
+    }
+    &__contact {
+        background-color: lightsteelblue;
+    }
+}
