@@ -360,6 +360,14 @@ template {
   grid-column-start: 2;
 }
 
+.details__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
