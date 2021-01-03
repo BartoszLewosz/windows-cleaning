@@ -368,8 +368,15 @@ template {
   padding: 0;
 }
 
+.nav__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .nav__header {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .nav__about {

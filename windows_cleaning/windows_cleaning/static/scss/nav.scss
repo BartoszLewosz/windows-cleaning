@@ -1,6 +1,12 @@
 .nav {
+    &__element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     &__header {
         font-size: 1.5rem;
+        text-align: center;
     }
     &__about {
         background-color: lightgreen;
