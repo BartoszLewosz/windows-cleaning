@@ -1,9 +1,9 @@
-.nav__about {
-  background-color: lightgreen;
+.nav__header {
+  font-size: 1.5rem;
 }
 
-.nav__about--header {
-  font-size: 1.5rem;
+.nav__about {
+  background-color: lightgreen;
 }
 
 .nav__services {
