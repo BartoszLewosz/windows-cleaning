@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -393,6 +394,16 @@ template {
 
 .nav__contact {
   background-color: lightsteelblue;
+}
+
+.nav__services--list-item {
+  padding: .5rem;
+  line-height: 1.25rem;
+}
+
+.nav__services--list-item::marker {
+  content: '⦿';
+  color: #AF8108;
 }
 
 html {
