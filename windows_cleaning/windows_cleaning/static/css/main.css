@@ -421,6 +421,7 @@ body {
 a {
   text-decoration: none;
   outline: none;
+  padding: 4px;
 }
 
 a:link {
@@ -437,6 +438,7 @@ a:focus {
 
 a:hover {
   color: #20211a;
+  border-bottom: 2px solid #AF8108;
 }
 
 a:active {

@@ -25,23 +25,22 @@ body {
 a {
     text-decoration: none;
     outline: none;
-}
-a:link {
-    color: inherit;
-}
-a:visited {
-    color: $font-gray;
-}
-
-a:focus {
-    border-bottom: 2px solid $gold;
-}
-
-a:hover {
-    color: $dark-backgrd;
-}
-
-a:active {
-    border-bottom: 2px solid $gold;
-    border-radius: 4px;
+    padding: 4px;
+    &:link {
+        color: inherit;
+    }
+    &:visited {
+        color: $font-gray;
+    }
+    &:focus {
+        border-bottom: 2px solid $gold;
+    }
+    &:hover {
+        color: $dark-backgrd;
+        border-bottom: 2px solid $gold;
+    }
+    &:active {
+        border-bottom: 2px solid $gold;
+        border-radius: 4px;
+    }
 }
