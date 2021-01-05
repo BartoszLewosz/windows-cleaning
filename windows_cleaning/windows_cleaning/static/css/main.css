@@ -417,3 +417,23 @@ body {
   font-family: Ubuntu;
   color: #858A88;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #858A88;
+}
+
+a:focus {
+  border: 1px solid #AF8108;
+}
+
+a:hover {
+  color: #20211a;
+}
+
+a:active {
+  border: 1px solid #AF8108;
+}

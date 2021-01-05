@@ -21,3 +21,27 @@ body {
     font-family: Ubuntu;
     color: $font-gray;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+
+}
+
+a:visited {
+    color: $font-gray;
+}
+
+a:focus {
+    border: 1px solid $gold;
+}
+
+a:hover {
+    color: $dark-backgrd;
+}
+
+a:active {
+    border: 1px solid $gold;
+}
