@@ -1,7 +1,7 @@
 a {
   text-decoration: none;
   outline: none;
-  padding: 4px;
+  padding: 2px;
 }
 
 a:link {
@@ -13,15 +13,16 @@ a:visited {
 }
 
 a:focus {
-  border-bottom: 2px solid #AF8108;
+  border: 1px solid #AF8108;
+  border-radius: 4px;
 }
 
 a:hover {
-  color: #20211a;
+  color: #C7BEBD;
   border-bottom: 2px solid #AF8108;
 }
 
 a:active {
-  border-bottom: 2px solid #AF8108;
+  border-bottom: 1px solid #AF8108;
   border-radius: 4px;
 }

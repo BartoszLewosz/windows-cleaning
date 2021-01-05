@@ -2,7 +2,7 @@
 a {
     text-decoration: none;
     outline: none;
-    padding: 4px;
+    padding: 2px;
     &:link {
         color: inherit;
     }
@@ -10,14 +10,15 @@ a {
         color: $font-gray;
     }
     &:focus {
-        border-bottom: 2px solid $gold;
+        border: 1px solid $gold;
+        border-radius: 4px;
     }
     &:hover {
-        color: $dark-backgrd;
+        color: $icon-white;
         border-bottom: 2px solid $gold;
     }
     &:active {
-        border-bottom: 2px solid $gold;
+        border-bottom: 1px solid $gold;
         border-radius: 4px;
     }
 }
