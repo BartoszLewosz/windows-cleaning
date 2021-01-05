@@ -24,18 +24,17 @@ body {
 
 a {
     text-decoration: none;
+    outline: none;
 }
-
 a:link {
-
+    color: inherit;
 }
-
 a:visited {
     color: $font-gray;
 }
 
 a:focus {
-    border: 1px solid $gold;
+    border-bottom: 2px solid $gold;
 }
 
 a:hover {
@@ -43,5 +42,6 @@ a:hover {
 }
 
 a:active {
-    border: 1px solid $gold;
+    border-bottom: 2px solid $gold;
+    border-radius: 4px;
 }

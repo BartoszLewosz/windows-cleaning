@@ -420,6 +420,11 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+}
+
+a:link {
+  color: inherit;
 }
 
 a:visited {
@@ -427,7 +432,7 @@ a:visited {
 }
 
 a:focus {
-  border: 1px solid #AF8108;
+  border-bottom: 2px solid #AF8108;
 }
 
 a:hover {
@@ -435,5 +440,6 @@ a:hover {
 }
 
 a:active {
-  border: 1px solid #AF8108;
+  border-bottom: 2px solid #AF8108;
+  border-radius: 4px;
 }
