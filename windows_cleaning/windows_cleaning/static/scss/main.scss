@@ -3,6 +3,7 @@
 @import  'modules/hero';
 @import 'modules/details';
 @import 'modules/nav';
+@import 'modules/link';
 @import 'modules/services';
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
@@ -20,27 +21,4 @@ html {
 body {
     font-family: Ubuntu;
     color: $font-gray;
-}
-
-a {
-    text-decoration: none;
-    outline: none;
-    padding: 4px;
-    &:link {
-        color: inherit;
-    }
-    &:visited {
-        color: $font-gray;
-    }
-    &:focus {
-        border-bottom: 2px solid $gold;
-    }
-    &:hover {
-        color: $dark-backgrd;
-        border-bottom: 2px solid $gold;
-    }
-    &:active {
-        border-bottom: 2px solid $gold;
-        border-radius: 4px;
-    }
 }

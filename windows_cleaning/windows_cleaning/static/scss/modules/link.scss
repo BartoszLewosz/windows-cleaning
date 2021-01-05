@@ -1,0 +1,23 @@
+@import 'colors';
+a {
+    text-decoration: none;
+    outline: none;
+    padding: 4px;
+    &:link {
+        color: inherit;
+    }
+    &:visited {
+        color: $font-gray;
+    }
+    &:focus {
+        border-bottom: 2px solid $gold;
+    }
+    &:hover {
+        color: $dark-backgrd;
+        border-bottom: 2px solid $gold;
+    }
+    &:active {
+        border-bottom: 2px solid $gold;
+        border-radius: 4px;
+    }
+}

@@ -392,32 +392,6 @@ template {
   background-color: lightsteelblue;
 }
 
-.nav__services--list-item {
-  padding: .5rem;
-  line-height: 1.25rem;
-}
-
-.nav__services--list-item::marker {
-  content: '⦿';
-  color: #AF8108;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: Ubuntu;
-  color: #858A88;
-}
-
 a {
   text-decoration: none;
   outline: none;
@@ -444,4 +418,30 @@ a:hover {
 a:active {
   border-bottom: 2px solid #AF8108;
   border-radius: 4px;
+}
+
+.nav__services--list-item {
+  padding: .5rem;
+  line-height: 1.25rem;
+}
+
+.nav__services--list-item::marker {
+  content: '⦿';
+  color: #AF8108;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Ubuntu;
+  color: #858A88;
 }

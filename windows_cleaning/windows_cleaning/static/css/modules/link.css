@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+  outline: none;
+  padding: 4px;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: #858A88;
+}
+
+a:focus {
+  border-bottom: 2px solid #AF8108;
+}
+
+a:hover {
+  color: #20211a;
+  border-bottom: 2px solid #AF8108;
+}
+
+a:active {
+  border-bottom: 2px solid #AF8108;
+  border-radius: 4px;
+}
