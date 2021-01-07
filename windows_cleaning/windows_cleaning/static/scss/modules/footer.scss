@@ -18,4 +18,9 @@
             vertical-align: middle;
         }
     }
+    &__window-icons {
+        display: flex;
+        justify-content: center;
+        padding: auto;
+    }
 }

@@ -456,6 +456,12 @@ a:active {
   vertical-align: middle;
 }
 
+.footer__window-icons {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
