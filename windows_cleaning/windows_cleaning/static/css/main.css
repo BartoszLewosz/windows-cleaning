@@ -387,6 +387,12 @@ template {
   text-align: center;
 }
 
+.page-update {
+  font-size: .7rem;
+  color: #484D35;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   outline: none;
