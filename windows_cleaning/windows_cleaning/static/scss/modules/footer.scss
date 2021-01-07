@@ -1,0 +1,8 @@
+@import 'colors';
+.footer {
+    background: $bright-backgrd;
+    padding: 1rem;
+    &__contact {
+        list-style-type: none;
+    }
+}

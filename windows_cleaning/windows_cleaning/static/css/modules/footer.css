@@ -1,0 +1,8 @@
+.footer {
+  background: #EBEEE7;
+  padding: 1rem;
+}
+
+.footer__contact {
+  list-style-type: none;
+}
