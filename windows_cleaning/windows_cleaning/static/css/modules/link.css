@@ -26,3 +26,15 @@ a:active {
   border-bottom: 1px solid #AF8108;
   border-radius: 4px;
 }
+
+.footer__link {
+  color: #20211a;
+}
+
+.footer__link:visited {
+  color: inherit;
+}
+
+.footer__link:hover {
+  color: #484D35;
+}

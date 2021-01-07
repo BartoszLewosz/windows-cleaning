@@ -22,3 +22,14 @@ a {
         border-radius: 4px;
     }
 }
+.footer {
+    &__link {
+        color: $dark-backgrd;
+        &:visited {
+            color: inherit;
+        }
+        &:hover {
+            color: $font-green;
+        }
+    }
+}

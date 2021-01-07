@@ -422,6 +422,18 @@ a:active {
   border-radius: 4px;
 }
 
+.footer__link {
+  color: #20211a;
+}
+
+.footer__link:visited {
+  color: inherit;
+}
+
+.footer__link:hover {
+  color: #484D35;
+}
+
 .nav__services--list-item {
   padding: .5rem;
   line-height: 1.25rem;
