@@ -3,6 +3,19 @@
     background: $bright-backgrd;
     padding: 1rem;
     &__contact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
         list-style-type: none;
+        text-align: center;
+        &--phone img {
+            vertical-align: middle;
+            padding: .5rem;
+        }
+        &--email img {
+            padding: .5rem;
+            vertical-align: middle;
+        }
     }
 }

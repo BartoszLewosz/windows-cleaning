@@ -4,5 +4,20 @@
 }
 
 .footer__contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
   list-style-type: none;
+  text-align: center;
+}
+
+.footer__contact--phone img {
+  vertical-align: middle;
+  padding: .5rem;
+}
+
+.footer__contact--email img {
+  padding: .5rem;
+  vertical-align: middle;
 }
