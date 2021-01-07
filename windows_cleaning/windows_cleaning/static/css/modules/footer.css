@@ -1,6 +1,8 @@
 .footer {
-  background: #EBEEE7;
-  padding: 1rem;
+  background: #161715;
+  background: linear-gradient(#161715 5%, #dededd 60%);
+  padding: 3rem 1rem 1rem;
+  color: #161715;
 }
 
 .footer__contact {
@@ -22,8 +24,11 @@
   vertical-align: middle;
 }
 
-.footer__window-icons {
+.footer__icons {
   display: flex;
   justify-content: center;
-  padding: auto;
+}
+
+.footer__window-icons {
+  margin: 2rem;
 }
