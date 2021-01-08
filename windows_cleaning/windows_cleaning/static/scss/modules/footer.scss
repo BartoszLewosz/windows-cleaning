@@ -1,8 +1,8 @@
 @import 'colors';
 .footer {
     background: rgb(22,23,21);
-    background: linear-gradient( rgba(22,23,21,1) 2%, rgba(222,222,221,1) 60%);
-    padding: .5rem 1rem 1rem;
+    background: linear-gradient(rgba(22,23,21,1) 2%, rgba(187,187,173,1) 20%, rgba(222,222,221,1) 35%); 
+    padding: 2rem 1rem 1rem;
     color: $background-dark;
     &__contact {
         display: flex;
@@ -35,7 +35,7 @@
         padding: 0;
         &--item {
             align-items: center;
-            padding: .5rem;
+            padding: 1rem 1rem .5rem;
         }
     }
 }
