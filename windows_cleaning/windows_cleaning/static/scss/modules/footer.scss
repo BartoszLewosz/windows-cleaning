@@ -27,4 +27,15 @@
     &__window-icons {
         margin: 2rem;
     }
+    &__list {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        &--item {
+            align-items: center;
+            padding: .5rem;
+        }
+    }
 }
