@@ -480,9 +480,11 @@ a:active {
 }
 
 .footer__list {
+  font-size: .9rem;
   display: flex;
+  flex-direction: column;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -494,7 +496,6 @@ a:active {
 }
 
 .footer__author {
-  display: inline;
   font-size: .7rem;
   margin: 1rem 0 0;
   padding: 0;
