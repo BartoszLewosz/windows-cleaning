@@ -502,7 +502,7 @@ a:active {
 }
 
 .hero__contact {
-  background: url("../assets/top_banner.jpg") no-repeat center center;
+  background: url("../assets/hero-bright.jpg") no-repeat center center;
   max-width: 100%;
   background-size: cover;
   min-height: 30em;
