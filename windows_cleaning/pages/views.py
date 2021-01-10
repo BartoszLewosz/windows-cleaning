@@ -18,6 +18,7 @@ def index(request, pagename):
     # assert False
     # - uncomment to see error page and check local vars
     return render(request, 'pages/page.html', context)
+    
 def contact(request):
     submitted = False
     if request.method == "POST":
