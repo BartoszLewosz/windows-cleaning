@@ -361,6 +361,10 @@ template {
   grid-column-start: 2;
 }
 
+.hero__title--homepage {
+  color: #858A88;
+}
+
 .details__list {
   list-style-type: none;
   display: flex;
@@ -517,11 +521,8 @@ a:active {
   margin: 1rem;
 }
 
-.hero__title {
-  align-self: center;
-  justify-self: center;
-  grid-column-start: 2;
-  color: #161715;
+.hero__title--contact {
+  color: #484D35;
 }
 
 html {
