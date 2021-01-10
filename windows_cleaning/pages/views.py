@@ -15,7 +15,8 @@ def index(request, pagename):
         'last_updated': pg.update_date,
         'page_list': Page.objects.all(),
     }
-    # assert False - uncomment to see error page and check local vars
+    # assert False
+    # - uncomment to see error page and check local vars
     return render(request, 'pages/page.html', context)
 def contact(request):
     submitted = False

@@ -9,6 +9,10 @@ Contact me
 <div class="hero__contact">
     bg photo
 </div>
+<header class="hero__title">Windows Cleaning</header>
+<div class="hero__menu">
+    <img src="{% static 'assets/hero-menu.png' %}" class="hero__image" alt="menu." srcset="">
+</div>
 {% endblock hero %}
 
 
@@ -20,14 +24,14 @@ Contact me
 </p>
 {% else %}
 <form action="" method="post" novalidate>
-<table>
-    {{ form.as_table }}
-    <tr>
-        <td>&nbsp;</td>
-        <td><input type="submit" value="Submit"></td>
-    </tr>
-</table>
-{% csrf_token %}
+    <table>
+        {{ form.as_table }}
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+    {% csrf_token %}
 </form>
 {% endif %}
 {% endblock content %}

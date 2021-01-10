@@ -4,9 +4,17 @@
 {% block title %}
 {{ title }}
 {% endblock title %}
-
+    
 {% block hero %}
+<section class="hero">
+    <header class="hero__title">Windows Cleaning</header>
+    <div class="hero__menu">
+        <img src="{% static 'assets/hero-menu.png' %}" class="hero__image" alt="menu." srcset="">
+    </div>    
+</section>
 {% endblock hero %}
+
+
 
 {% block sidenav %}
 {% for page in page_list %}
@@ -18,8 +26,8 @@
 {% autoescape off %}
 {{ content }}
 {% endautoescape %}
-
-<!-- <p class="page-update">
+<!-- 
+<p class="page-update">
     Page last updated: {{ last_updated|date:'l, dS F Y' }}
 </p> -->
 {% endblock content %}
