@@ -528,7 +528,6 @@ a:active {
 }
 
 .form {
-  background-color: #20211a;
   padding: 3rem;
   list-style-type: none;
   font-size: .875rem;
@@ -541,13 +540,17 @@ label {
 }
 
 .errorlist {
-  background: rgba(255, 0, 0, 0.15);
-  list-style-position: inside;
-  display: block;
-  font-size: 1.2em;
-  margin: 0 0 3px;
-  padding: 4px 5px;
+  color: #AF8108;
+  font-size: .8rem;
+  margin: 0 0 4px;
   text-align: center;
+  list-style-type: none;
+}
+
+.errorlist li::marker {
+  content: '⦿';
+  color: #AF8108;
+  padding: 2rem;
 }
 
 input, textarea {
