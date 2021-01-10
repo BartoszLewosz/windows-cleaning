@@ -18,16 +18,16 @@ Contact me
 
 {% block content %}
 {% if submitted %}
-<p class="success">
+<p class="form__success">
     Your message was submited successfully. <br>Thank you
 </p>
 {% else %}
-<form action="" method="post" novalidate>
-    <table>
+<form class="form" action="" method="post" novalidate>
+    <table class="table">
         {{ form.as_table }}
-        <tr>
+        <tr class="table__row">
             <td>&nbsp;</td>
-            <td><input type="submit" value="Submit"></td>
+            <td><input class="table__submit" type="submit" value="Submit"></td>
         </tr>
     </table>
     {% csrf_token %}
