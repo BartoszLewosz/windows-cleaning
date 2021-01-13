@@ -55,13 +55,41 @@ input {
   height: 2.25rem;
 }
 
+input:focus {
+  height: 2.5rem;
+  border: 0.25rem solid #161715;
+}
+
+.submit-button {
+  font-size: 1rem;
+  color: red;
+}
+
+.submit-input:hover {
+  color: #AF8108;
+  font-weight: bolder;
+  border: 0.25rem solid #161715;
+}
+
+.submit-input:active {
+  color: #AF8108;
+  font-weight: bolder;
+}
+
+.submit-input:focus {
+  color: #AF8108;
+  font-weight: bolder;
+  background-color: #161715;
+}
+
 .success {
-  background-color: rgba(0, 128, 0, 0.15);
-  padding: 10px;
+  padding: .8rem;
+  margin: .5rem;
   text-align: center;
-  color: green;
-  border: 1px solid green;
-  border-radius: 3px;
+  color: #AF8108;
+  font-weight: bolder;
+  border: 1px solid #AF8108;
+  border-radius: 4px;
 }
 
 .required label:after {

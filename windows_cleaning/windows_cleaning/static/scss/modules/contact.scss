@@ -52,13 +52,36 @@ input, textarea {
 input {	
     height: 2.25rem;
 }
+input:focus {	
+    height: 2.5rem;
+    border: .25rem solid $background-dark;
+}
+.submit-button {
+    font-size: 1rem;
+    color: red;
+}
+.submit-input:hover {
+    color: $gold;
+    font-weight: bolder;
+    border: .25rem solid $background-dark;
+}
+.submit-input:active {
+    color: $gold;
+    font-weight: bolder;
+}
+.submit-input:focus {
+    color: $gold;
+    font-weight: bolder;
+    background-color: $background-dark;
+}
 .success {
-    background-color: rgba(0, 128, 0, 0.15);
-    padding: 10px;
+    padding: .8rem;
+    margin: .5rem;
     text-align: center;
-    color: green;
-    border: 1px solid green;
-    border-radius: 3px;
+    color: $gold;
+    font-weight: bolder;
+    border: 1px solid $gold;
+    border-radius: 4px;
 }
 
 .required label:after {
