@@ -5,10 +5,12 @@
 
 {% block hero %}
 <section class="hero__quote">
-    <header class="hero__title"><p class="hero__title--quote">Windows Cleaning</p></header>
+    <header class="hero__title">
+        <p class="hero__title--quote">Windows Cleaning</p>
+    </header>
     <div class="hero__menu">
         <img src="{% static 'assets/windows.svg' %}" class="hero__image" alt="menu." srcset="">
-    </div>    
+    </div>
 </section>
 {% endblock hero %}
 
@@ -16,20 +18,15 @@
 <h1>Quote Request</h1>
 
 {% if submitted %}
-    <p class="success">
-        Your quote was submitted successfully. Thank you.
-    </p>
+<p class="success">
+    Your quote was submitted successfully. Thank you.
+</p>
 {% else %}
-    <form action="" enctype="multipart/form-data" method="POST" novalidate>
-    <table>
-        {{ form.as_table }}
-        <tr>
-            <td>&nbsp;</td>
-            <td><input type="submit" value="Submit"></td>
-        </tr>
-    </table>
+<form action="" enctype="multipart/form-data" method="POST" novalidate>
+    {{ form.as_ul }}
+        <p class="submit-button"><input class="submit-input" type="submit" value="Submit"></p>
     {% csrf_token %}
-    </form>
+</form>
 {% endif %}
 
 {% endblock content %}
