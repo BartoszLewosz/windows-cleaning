@@ -540,23 +540,26 @@ label {
 }
 
 .errorlist {
+  border: 1px solid red;
+  border-radius: 4px;
   color: #AF8108;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 0 0 4px;
   text-align: center;
   list-style-type: none;
 }
 
 .errorlist li::marker {
-  content: '⦿';
+  content: "⦿";
   color: #AF8108;
   padding: 2rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   border-radius: 4px;
-  margin: .5rem 0 1rem;
+  margin: 0.5rem 0 1rem;
 }
 
 input {
@@ -591,12 +594,12 @@ input:focus {
 }
 
 .success {
-  padding: .8rem;
-  margin: .5rem;
+  padding: 0.8rem;
+  margin: 0.5rem;
   text-align: center;
   color: #AF8108;
   font-weight: bolder;
-  border: 1px solid #AF8108;
+  border: 2px solid #484D35;
   border-radius: 4px;
 }
 

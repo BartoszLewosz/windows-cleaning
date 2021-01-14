@@ -1,5 +1,5 @@
-@import 'colors';
-.hero{
+@import "colors";
+.hero {
     &__contact {
         background: url("../assets/hero-bright.jpg") no-repeat center center;
         max-width: 100%;
@@ -31,30 +31,33 @@ label {
     font-weight: bold;
 }
 .errorlist {
+    border: 1px solid red;
+    border-radius: 4px;
     color: $gold;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin: 0 0 4px;
     text-align: center;
     list-style-type: none;
 }
 .errorlist li::marker {
-    content: '⦿';
+    content: "⦿";
     color: $gold;
     padding: 2rem;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     border-radius: 4px;
-    margin: .5rem 0 1rem;
+    margin: 0.5rem 0 1rem;
 }
 
-input {	
+input {
     height: 2.25rem;
 }
-input:focus {	
+input:focus {
     height: 2.5rem;
-    border: .25rem solid $background-dark;
+    border: 0.25rem solid $background-dark;
 }
 .submit-button {
     font-size: 1rem;
@@ -63,7 +66,7 @@ input:focus {
 .submit-input:hover {
     color: $gold;
     font-weight: bolder;
-    border: .25rem solid $background-dark;
+    border: 0.25rem solid $background-dark;
 }
 .submit-input:active {
     color: $gold;
@@ -75,12 +78,12 @@ input:focus {
     background-color: $background-dark;
 }
 .success {
-    padding: .8rem;
-    margin: .5rem;
+    padding: 0.8rem;
+    margin: 0.5rem;
     text-align: center;
     color: $gold;
     font-weight: bolder;
-    border: 1px solid $gold;
+    border: 2px solid $font-green;
     border-radius: 4px;
 }
 
@@ -99,7 +102,7 @@ input:focus {
     padding: 5px 10px;
 }
 .altrow {
-    background-color: #e0e0e0
+    background-color: #e0e0e0;
 }
 
 .quote td:first-child {
