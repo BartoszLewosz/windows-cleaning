@@ -529,6 +529,7 @@ a:active {
 
 .form {
   padding: 3rem;
+  margin: 0 auto;
   list-style-type: none;
   font-size: .875rem;
 }
