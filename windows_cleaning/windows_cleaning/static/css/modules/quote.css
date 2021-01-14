@@ -44,3 +44,9 @@ label {
 #id_job_file {
   color: #484D35;
 }
+
+@media (min-width: 768px) {
+  #id_job_file {
+    margin: 0 auto;
+  }
+}

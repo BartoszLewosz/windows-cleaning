@@ -43,4 +43,7 @@ label {
 }
 #id_job_file {
     color: $font-green;
+    @media (min-width: $tablet) {
+        margin: 0 auto;
+    }
 }

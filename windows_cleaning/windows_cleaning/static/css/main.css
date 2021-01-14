@@ -687,6 +687,12 @@ label {
   color: #484D35;
 }
 
+@media (min-width: 768px) {
+  #id_job_file {
+    margin: 0 auto;
+  }
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
