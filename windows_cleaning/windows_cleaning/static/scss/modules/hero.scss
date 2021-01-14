@@ -8,6 +8,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px;
+    @media (min-width: $tablet) {
+        min-height: $tablet;
+    }
     &__menu {
         grid-column-start: 3;
         justify-self: end;

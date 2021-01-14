@@ -349,6 +349,12 @@ template {
   grid-template-rows: 50px;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    min-height: 768px;
+  }
+}
+
 .hero__menu {
   grid-column-start: 3;
   justify-self: end;
@@ -531,7 +537,7 @@ a:active {
 
 @media (min-width: 768px) {
   .hero__contact {
-    min-height: 40em;
+    min-height: 768px;
   }
 }
 
@@ -634,7 +640,7 @@ input:focus {
 
 @media (min-width: 768px) {
   .hero__quote {
-    min-height: 40em;
+    min-height: 768px;
   }
 }
 

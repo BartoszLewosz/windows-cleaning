@@ -8,6 +8,12 @@
   grid-template-rows: 50px;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    min-height: 768px;
+  }
+}
+
 .hero__menu {
   grid-column-start: 3;
   justify-self: end;

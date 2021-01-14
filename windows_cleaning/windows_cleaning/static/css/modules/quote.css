@@ -10,7 +10,7 @@
 
 @media (min-width: 768px) {
   .hero__quote {
-    min-height: 40em;
+    min-height: 768px;
   }
 }
 
