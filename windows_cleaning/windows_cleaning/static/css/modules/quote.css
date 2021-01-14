@@ -17,3 +17,9 @@
 .hero__title--contact {
   color: #484D35;
 }
+
+label {
+  text-align: left;
+  color: #AF8108;
+  font-weight: bold;
+}
