@@ -2,7 +2,7 @@
   background: url("../assets/hero-dark.jpg") no-repeat center center;
   max-width: 100%;
   background-size: cover;
-  min-height: 60em;
+  min-height: 468px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;

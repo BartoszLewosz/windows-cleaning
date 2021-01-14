@@ -1,13 +1,18 @@
 @import "colors";
+@import 'media';
+
 .hero {
     &__contact {
         background: url("../assets/hero-bright.jpg") no-repeat center center;
         max-width: 100%;
         background-size: cover;
-        min-height: 40em;
+        min-height: 468px;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 50px;
+        @media (min-width: $tablet) {
+            min-height: 40em;
+        }
     }
     &__menu {
         grid-column-start: 3;

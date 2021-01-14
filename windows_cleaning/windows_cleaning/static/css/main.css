@@ -343,7 +343,7 @@ template {
   background: url("../assets/hero-dark.jpg") no-repeat center center;
   max-width: 100%;
   background-size: cover;
-  min-height: 60em;
+  min-height: 468px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;
@@ -523,10 +523,16 @@ a:active {
   background: url("../assets/hero-bright.jpg") no-repeat center center;
   max-width: 100%;
   background-size: cover;
-  min-height: 40em;
+  min-height: 468px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;
+}
+
+@media (min-width: 768px) {
+  .hero__contact {
+    min-height: 40em;
+  }
 }
 
 .hero__menu {
@@ -620,10 +626,16 @@ input:focus {
   background-image: url("../assets/hero-quote.jpg");
   background-size: cover;
   resize: both;
-  min-height: 40em;
+  min-height: 468px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;
+}
+
+@media (min-width: 768px) {
+  .hero__quote {
+    min-height: 40em;
+  }
 }
 
 .hero__menu {

@@ -2,10 +2,16 @@
   background-image: url("../assets/hero-quote.jpg");
   background-size: cover;
   resize: both;
-  min-height: 40em;
+  min-height: 468px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;
+}
+
+@media (min-width: 768px) {
+  .hero__quote {
+    min-height: 40em;
+  }
 }
 
 .hero__menu {
