@@ -343,7 +343,7 @@ template {
   background: url("../assets/hero-dark.jpg") no-repeat center center;
   max-width: 100%;
   background-size: cover;
-  min-height: 30em;
+  min-height: 60em;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;
@@ -361,6 +361,12 @@ template {
   align-self: center;
   justify-self: center;
   grid-column-start: 2;
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 1.75rem;
+  }
 }
 
 .hero__title--homepage {
@@ -517,7 +523,7 @@ a:active {
   background: url("../assets/hero-bright.jpg") no-repeat center center;
   max-width: 100%;
   background-size: cover;
-  min-height: 30em;
+  min-height: 40em;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;
@@ -614,7 +620,7 @@ input:focus {
   background-image: url("../assets/hero-quote.jpg");
   background-size: cover;
   resize: both;
-  min-height: 20em;
+  min-height: 40em;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 50px;

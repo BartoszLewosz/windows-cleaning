@@ -1,9 +1,10 @@
 @import 'colors';
+@import 'media';
 .hero {
     background: url("../assets/hero-dark.jpg") no-repeat center center;
     max-width: 100%;
     background-size: cover;
-    min-height: 30em;
+    min-height: 60em;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px;
@@ -18,6 +19,9 @@
         align-self: center;
         justify-self: center;
         grid-column-start: 2;
+        @media (min-width: $tablet) {
+            font-size: 1.75rem;
+        }
         &--homepage {
             color: $font-gray;
         }
