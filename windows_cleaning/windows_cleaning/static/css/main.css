@@ -623,10 +623,21 @@ input:focus {
   color: #484D35;
 }
 
+.quote__header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 label {
   text-align: left;
   color: #AF8108;
   font-weight: bold;
+}
+
+.form {
+  padding: 3rem;
+  list-style-type: none;
+  font-size: .875rem;
 }
 
 html {

@@ -15,14 +15,14 @@
 {% endblock hero %}
 
 {% block content %}
-<h1>Quote Request</h1>
+<h1 class="quote__header">Quote Request</h1>
 
 {% if submitted %}
 <p class="success">
     Your quote was submitted successfully. Thank you.
 </p>
 {% else %}
-<form action="" enctype="multipart/form-data" method="POST" novalidate>
+<form class="form" action="" enctype="multipart/form-data" method="POST" novalidate>
     {{ form.as_ul }}
         <p class="submit-button"><input class="submit-input" type="submit" value="Submit"></p>
     {% csrf_token %}
