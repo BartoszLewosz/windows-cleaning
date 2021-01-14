@@ -1,6 +1,9 @@
 @import 'colors';
 .nav__services {
     &--list {
+        @media (min-width:768px) {
+            columns: 2 100px;
+        }
         // Use before when assets uploaded to server. In browser sows that cannot find in 127.0.0.1:8000
         &-item {
             padding: .5rem;

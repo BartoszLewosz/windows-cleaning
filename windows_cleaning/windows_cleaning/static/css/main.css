@@ -440,6 +440,12 @@ a:active {
   color: #484D35;
 }
 
+@media (min-width: 768px) {
+  .nav__services--list {
+    columns: 2 100px;
+  }
+}
+
 .nav__services--list-item {
   padding: .5rem;
   line-height: 1.25rem;
