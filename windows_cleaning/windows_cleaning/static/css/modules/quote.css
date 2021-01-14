@@ -34,3 +34,7 @@ label {
   list-style-type: none;
   font-size: .875rem;
 }
+
+#id_job_file {
+  color: #484D35;
+}

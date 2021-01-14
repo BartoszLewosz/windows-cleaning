@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Quote
 
 class QuoteAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'company', 'submitted', 'quote_date', 'quote_price')
+    list_display = ('id', 'name', 'company', 'submitted', 'quote_date', 'quote_price', 'priority')
     list_filter = ('submitted', 'quote_date')
     readonly_fields = ('submitted',)
     fieldsets = (

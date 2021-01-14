@@ -25,7 +25,7 @@
 <form class="form" action="" enctype="multipart/form-data" method="POST" novalidate>
     {{ form.as_ul }}
         <p class="submit-button"><input class="submit-input" type="submit" value="Submit"></p>
-    {% csrf_token %}
+        {% csrf_token %}
 </form>
 {% endif %}
 

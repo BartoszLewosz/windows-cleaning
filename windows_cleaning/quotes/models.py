@@ -30,4 +30,4 @@ class Quote(models.Model):
     user_name = models.ForeignKey(User, blank=True, null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return str(self.user_name)
+        return str(self.company)
