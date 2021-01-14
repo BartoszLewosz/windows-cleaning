@@ -558,6 +558,12 @@ a:active {
   font-size: .875rem;
 }
 
+@media (min-width: 768px) {
+  .form {
+    width: 70%;
+  }
+}
+
 label {
   text-align: left;
   color: #AF8108;
@@ -598,7 +604,13 @@ input:focus {
 
 .submit-button {
   font-size: 1rem;
-  color: red;
+}
+
+@media (min-width: 768px) {
+  .submit-button {
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 
 .submit-input:hover {
