@@ -27,6 +27,9 @@
         }
         &--homepage {
             color: $font-gray;
+            @media (min-width: $desktop) {
+                display: none;
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-@import 'colors';
+@import "colors";
+@import "media";
 .nav {
     &__element {
         display: flex;
@@ -17,7 +18,27 @@
     }
 }
 .page-update {
-    font-size: .7rem;
+    font-size: 0.7rem;
     color: $font-green;
     text-align: center;
+}
+.top-nav {
+    display: none;
+    @media (min-width: $tablet) {
+        background-color: blue;
+        display: block;
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            grid-template-rows: 8rem;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            &--item {
+                background-color: greenyellow;
+            }
+        }
+    }
 }

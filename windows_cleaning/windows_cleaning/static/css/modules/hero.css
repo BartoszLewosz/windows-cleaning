@@ -37,3 +37,9 @@
 .hero__title--homepage {
   color: #858A88;
 }
+
+@media (min-width: 1024px) {
+  .hero__title--homepage {
+    display: none;
+  }
+}

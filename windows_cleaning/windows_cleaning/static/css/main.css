@@ -379,6 +379,12 @@ template {
   color: #858A88;
 }
 
+@media (min-width: 1024px) {
+  .hero__title--homepage {
+    display: none;
+  }
+}
+
 .details__list {
   list-style-type: none;
   display: flex;
@@ -406,9 +412,33 @@ template {
 }
 
 .page-update {
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #484D35;
   text-align: center;
+}
+
+.top-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top-nav {
+    background-color: blue;
+    display: block;
+  }
+  .top-nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 8rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .top-nav__list--item {
+    background-color: greenyellow;
+  }
 }
 
 a {
