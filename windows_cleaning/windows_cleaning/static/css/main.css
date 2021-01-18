@@ -416,21 +416,17 @@ template {
 
 @media (min-width: 768px) {
   .top-nav {
-    background-color: blue;
     display: block;
   }
   .top-nav__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-template-rows: 8rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  .top-nav__list--item {
-    background-color: greenyellow;
   }
 }
 
@@ -691,8 +687,20 @@ input:focus {
   margin: 1rem;
 }
 
-.hero__title--contact {
+@media (min-width: 768px) {
+  .hero__menu {
+    display: none;
+  }
+}
+
+.hero__title--quote {
   color: #484D35;
+}
+
+@media (min-width: 768px) {
+  .hero__title--quote {
+    display: none;
+  }
 }
 
 .quote__header {

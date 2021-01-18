@@ -18,10 +18,16 @@
         grid-column-start: 3;
         justify-self: end;
         margin: 1rem;
+        @media (min-width: $tablet) {
+            display: none;
+        }
     }
     &__title {
-        &--contact {
+        &--quote {
             color: $font-green;
+            @media (min-width: $tablet) {
+                display: none;
+            }
         }
     }
 }

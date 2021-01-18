@@ -20,8 +20,20 @@
   margin: 1rem;
 }
 
-.hero__title--contact {
+@media (min-width: 768px) {
+  .hero__menu {
+    display: none;
+  }
+}
+
+.hero__title--quote {
   color: #484D35;
+}
+
+@media (min-width: 768px) {
+  .hero__title--quote {
+    display: none;
+  }
 }
 
 .quote__header {

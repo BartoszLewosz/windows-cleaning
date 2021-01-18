@@ -28,20 +28,16 @@
 
 @media (min-width: 768px) {
   .top-nav {
-    background-color: blue;
     display: block;
   }
   .top-nav__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-template-rows: 8rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  .top-nav__list--item {
-    background-color: greenyellow;
   }
 }
