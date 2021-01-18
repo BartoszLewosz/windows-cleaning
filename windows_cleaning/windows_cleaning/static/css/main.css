@@ -433,7 +433,6 @@ template {
 a {
   text-decoration: none;
   outline: none;
-  padding: 2px;
 }
 
 a:link {
@@ -469,6 +468,17 @@ a:active {
 
 .footer__link:hover {
   color: #484D35;
+}
+
+.top-nav__link {
+  text-decoration: inherit;
+}
+
+.top-nav__link:hover {
+  border: 1px solid #AF8108;
+  border-radius: 4px;
+  padding: 4px;
+  color: #C7BEBD;
 }
 
 @media (min-width: 768px) {

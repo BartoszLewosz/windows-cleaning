@@ -1,8 +1,7 @@
-@import 'colors';
+@import "colors";
 a {
     text-decoration: none;
     outline: none;
-    padding: 2px;
     &:link {
         color: inherit;
     }
@@ -30,6 +29,17 @@ a {
         }
         &:hover {
             color: $font-green;
+        }
+    }
+}
+.top-nav {
+    &__link {
+        text-decoration: inherit;
+        &:hover {
+            border: 1px solid $gold;
+            border-radius: 4px;
+            padding: 4px;
+            color: $icon-white;
         }
     }
 }
