@@ -31,6 +31,8 @@
     display: none;
     @media (min-width: $tablet) {
         display: block;
+        max-width: 1024px;
+        margin: 0 auto;
         &__list {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

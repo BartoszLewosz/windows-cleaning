@@ -3,6 +3,7 @@
   background: linear-gradient(#161715 1%, #bbbbad 30%, #dededd 35%);
   padding: 2rem 1rem .5rem;
   color: #161715;
+  font-size: 2.25rem;
 }
 
 .footer__contact {
@@ -12,6 +13,7 @@
   padding: 2rem 0 0;
   list-style-type: none;
   text-align: center;
+  gap: 3rem;
 }
 
 .footer__contact--phone img {
@@ -25,8 +27,9 @@
 }
 
 .footer__icons {
-  display: flex;
-  justify-content: center;
+  background: url("../assets/footer-icons.svg") repeat-x center/40%;
+  height: 4rem;
+  margin: 2rem;
 }
 
 .footer__window-icons {
@@ -34,14 +37,15 @@
 }
 
 .footer__list {
-  font-size: .9rem;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
   justify-content: space-around;
   list-style-type: none;
+  max-width: 1024px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
 }
 
 .footer__list--item {

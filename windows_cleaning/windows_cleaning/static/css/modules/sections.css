@@ -37,6 +37,8 @@
 @media (min-width: 768px) {
   .top-nav {
     display: block;
+    max-width: 1024px;
+    margin: 0 auto;
   }
   .top-nav__list {
     display: grid;
