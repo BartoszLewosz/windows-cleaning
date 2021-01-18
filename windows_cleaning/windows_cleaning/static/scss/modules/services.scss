@@ -1,6 +1,6 @@
 @import 'colors';
 @import 'media';
-.nav__services {
+.sections__services {
     &--list {
         @media (min-width:$tablet) {
             columns: 2 100px;

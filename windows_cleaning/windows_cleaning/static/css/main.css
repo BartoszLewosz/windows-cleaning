@@ -386,7 +386,7 @@ template {
   padding: 0;
 }
 
-.nav__element {
+.sections__element {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,13 +394,13 @@ template {
   margin: 1rem;
 }
 
-.nav__header {
+.sections__header {
   font-size: 1.5rem;
   text-align: center;
   margin: 2rem;
 }
 
-.nav__content {
+.sections__content {
   text-align: center;
 }
 
@@ -482,17 +482,17 @@ a:active {
 }
 
 @media (min-width: 768px) {
-  .nav__services--list {
+  .sections__services--list {
     columns: 2 100px;
   }
 }
 
-.nav__services--list-item {
+.sections__services--list-item {
   padding: .5rem;
   line-height: 1.25rem;
 }
 
-.nav__services--list-item::marker {
+.sections__services--list-item::marker {
   content: '⦿';
   color: #AF8108;
 }

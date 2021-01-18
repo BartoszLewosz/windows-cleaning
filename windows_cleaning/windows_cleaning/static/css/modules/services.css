@@ -1,16 +1,16 @@
 @charset "UTF-8";
 @media (min-width: 768px) {
-  .nav__services--list {
+  .sections__services--list {
     columns: 2 100px;
   }
 }
 
-.nav__services--list-item {
+.sections__services--list-item {
   padding: .5rem;
   line-height: 1.25rem;
 }
 
-.nav__services--list-item::marker {
+.sections__services--list-item::marker {
   content: '⦿';
   color: #AF8108;
 }
