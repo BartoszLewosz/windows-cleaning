@@ -9,27 +9,33 @@
   grid-template-rows: 50px;
 }
 
-@media (min-width: 768px) {
-  .hero__contact {
-    min-height: 768px;
-  }
-}
-
 .hero__menu {
   grid-column-start: 3;
   justify-self: end;
   margin: 1rem;
 }
 
+@media (min-width: 768px) {
+  .hero__menu {
+    display: none;
+  }
+}
+
 .hero__title--contact {
   color: #484D35;
+}
+
+@media (min-width: 768px) {
+  .hero__title--contact {
+    display: none;
+  }
 }
 
 .form {
   padding: 3rem;
   margin: 0 auto;
   list-style-type: none;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 768px) {

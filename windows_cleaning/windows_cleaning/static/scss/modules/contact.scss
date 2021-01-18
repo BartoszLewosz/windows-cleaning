@@ -1,5 +1,5 @@
 @import "colors";
-@import 'media';
+@import "media";
 
 .hero {
     &__contact {
@@ -10,18 +10,21 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 50px;
-        @media (min-width: $tablet) {
-            min-height: $tablet;
-        }
     }
     &__menu {
         grid-column-start: 3;
         justify-self: end;
         margin: 1rem;
+        @media (min-width: $tablet) {
+            display: none;
+        }
     }
     &__title {
         &--contact {
             color: $font-green;
+            @media (min-width: $tablet) {
+                display: none;
+            }
         }
     }
 }
@@ -29,7 +32,7 @@
     padding: 3rem;
     margin: 0 auto;
     list-style-type: none;
-    font-size: .875rem;
+    font-size: 0.875rem;
     @media (min-width: $tablet) {
         width: 70%;
     }
