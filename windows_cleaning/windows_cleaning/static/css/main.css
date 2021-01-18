@@ -409,10 +409,16 @@ template {
 
 .sections__content {
   text-align: justify;
-  font-weight: 300;
-  font-size: 1.25rem;
-  line-height: 2.25rem;
-  padding: 2rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .sections__content {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
 }
 
 .page-update {
@@ -494,38 +500,50 @@ a:active {
   color: #C7BEBD;
 }
 
-.sections__services {
-  padding: 2rem;
+@media (min-width: 768px) {
+  .sections__services {
+    padding: 2rem;
+  }
 }
 
 .sections__services--list {
   font-weight: 300;
-  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .sections__services--list {
     columns: 2 200px;
     column-gap: 4rem;
+    font-size: 1.25rem;
   }
 }
 
 .sections__services--list-item {
-  padding: .5rem;
-  line-height: 2.25rem;
+  padding: 0.5rem;
 }
 
 .sections__services--list-item::marker {
-  content: '⦿';
+  content: "⦿";
   color: #AF8108;
+}
+
+@media (min-width: 768px) {
+  .sections__services--list-item {
+    line-height: 2.25rem;
+  }
 }
 
 .footer {
   background: #161715;
   background: linear-gradient(#161715 1%, #bbbbad 30%, #dededd 35%);
-  padding: 2rem 1rem .5rem;
+  padding: 2rem 1rem 0.5rem;
   color: #161715;
-  font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 2.25rem;
+  }
 }
 
 .footer__contact {
@@ -540,18 +558,24 @@ a:active {
 
 .footer__contact--phone img {
   vertical-align: middle;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .footer__contact--email img {
-  padding: .5rem;
+  padding: 0.5rem;
   vertical-align: middle;
 }
 
 .footer__icons {
-  background: url("../assets/footer-icons.svg") repeat-x center/40%;
+  background: url("../assets/footer-icons.svg") repeat-x center;
   height: 4rem;
   margin: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer__icons {
+    background: url("../assets/footer-icons.svg") repeat-x center/40%;
+  }
 }
 
 .footer__window-icons {
@@ -559,7 +583,6 @@ a:active {
 }
 
 .footer__list {
-  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
@@ -570,13 +593,19 @@ a:active {
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .footer__list {
+    font-size: 1.25rem;
+  }
+}
+
 .footer__list--item {
   align-items: center;
-  padding: 1rem 1rem .5rem;
+  padding: 1rem 1rem 0.5rem;
 }
 
 .footer__author {
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin: 1rem 0 0;
   padding: 0;
 }
