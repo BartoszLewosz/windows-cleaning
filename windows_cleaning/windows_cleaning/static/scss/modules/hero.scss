@@ -2,7 +2,8 @@
 @import "media";
 .hero {
     background: url("../assets/hero-dark.jpg") no-repeat center center;
-    max-width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
     background-size: cover;
     min-height: 468px;
     @media (min-width: $tablet) {

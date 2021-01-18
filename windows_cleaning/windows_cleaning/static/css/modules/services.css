@@ -1,13 +1,23 @@
 @charset "UTF-8";
+.sections__services {
+  padding: 2rem;
+}
+
+.sections__services--list {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
 @media (min-width: 768px) {
   .sections__services--list {
-    columns: 2 100px;
+    columns: 2 200px;
+    column-gap: 4rem;
   }
 }
 
 .sections__services--list-item {
   padding: .5rem;
-  line-height: 1.25rem;
+  line-height: 2.25rem;
 }
 
 .sections__services--list-item::marker {

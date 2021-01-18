@@ -1,14 +1,19 @@
 @import 'colors';
 @import 'media';
 .sections__services {
+    padding: 2rem;
     &--list {
+        font-weight: 300;
+        font-size: 1.25rem;
+        
         @media (min-width:$tablet) {
-            columns: 2 100px;
+            columns: 2 200px;
+            column-gap: 4rem;
         }
         // Use before when assets uploaded to server. In browser sows that cannot find in 127.0.0.1:8000
         &-item {
             padding: .5rem;
-            line-height: 1.25rem;
+            line-height: 2.25rem;
             &::marker {
                 content: '⦿';
                 color: $gold;

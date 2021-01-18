@@ -1,8 +1,12 @@
+.sections {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .sections__element {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   margin: 1rem;
 }
 
@@ -13,7 +17,11 @@
 }
 
 .sections__content {
-  text-align: center;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  padding: 2rem;
 }
 
 .page-update {

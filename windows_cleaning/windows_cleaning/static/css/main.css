@@ -341,7 +341,8 @@ template {
 
 .hero {
   background: url("../assets/hero-dark.jpg") no-repeat center center;
-  max-width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
   background-size: cover;
   min-height: 468px;
 }
@@ -384,13 +385,19 @@ template {
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
+  max-width: 1024px;
+  margin: 2rem auto;
+}
+
+.sections {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .sections__element {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   margin: 1rem;
 }
 
@@ -401,7 +408,11 @@ template {
 }
 
 .sections__content {
-  text-align: center;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  padding: 2rem;
 }
 
 .page-update {
@@ -481,15 +492,25 @@ a:active {
   color: #C7BEBD;
 }
 
+.sections__services {
+  padding: 2rem;
+}
+
+.sections__services--list {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
 @media (min-width: 768px) {
   .sections__services--list {
-    columns: 2 100px;
+    columns: 2 200px;
+    column-gap: 4rem;
   }
 }
 
 .sections__services--list-item {
   padding: .5rem;
-  line-height: 1.25rem;
+  line-height: 2.25rem;
 }
 
 .sections__services--list-item::marker {
@@ -713,6 +734,11 @@ input:focus {
   }
 }
 
+.quote {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .quote__header {
   text-align: center;
   font-size: 1.5rem;
@@ -757,6 +783,4 @@ body {
   font-family: Ubuntu;
   color: #858A88;
   background: #161715;
-  max-width: 1024px;
-  margin: 0 auto;
 }

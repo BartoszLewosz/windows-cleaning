@@ -36,6 +36,11 @@
   }
 }
 
+.quote {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .quote__header {
   text-align: center;
   font-size: 1.5rem;
