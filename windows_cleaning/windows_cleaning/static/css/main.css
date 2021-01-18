@@ -757,4 +757,6 @@ body {
   font-family: Ubuntu;
   color: #858A88;
   background: #161715;
+  max-width: 1024px;
+  margin: 0 auto;
 }
