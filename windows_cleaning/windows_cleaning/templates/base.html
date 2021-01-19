@@ -17,6 +17,9 @@
     <main class="main">
         <div class="header">
             <nav class="top-nav">
+                <div class="btn-menu">
+                    <div class="btn-menu__window"></div>
+                </div>
                 <ul class="top-nav__list">
                     <a class="top-nav__link" href="/">
                         <li class="top-nav__list--item"><img src="{% static 'assets/home.svg' %}" alt="home."
@@ -38,15 +41,14 @@
                     </a>
                     <li class="top-nav__list--item"><img src="{% static 'assets/010-windows-4 1.svg' %}"
                             class="hero__image" alt="menu." srcset=""></li>
-                    <a class="top-nav__link" href="/">
-                        <li class="top-nav__list--item"><img src="{% static 'assets/close.svg' %}" alt="close top nav."
-                                srcset=""><br>close</li>
-                    </a>
+                    <li class="top-nav__list--item"></li>
                 </ul>
             </nav>
+
         </div>
 
         {% block hero %}
+        <img src="{% static 'assets/close.svg' %}" alt="close top nav." srcset="">
         {% endblock hero %}
 
         <section class="details">

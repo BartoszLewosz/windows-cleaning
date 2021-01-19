@@ -38,7 +38,7 @@
         margin: 0 auto;
         &__list {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             align-items: center;
             justify-items: center;
             grid-template-rows: 8rem;
@@ -47,4 +47,11 @@
             padding: 0;
         }
     }
+}
+.btn-menu {
+    background: hotpink;
+    position: absolute;
+    right: 2rem;
+    height: 128px;
+    width: 128px;
 }

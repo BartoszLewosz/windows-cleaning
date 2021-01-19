@@ -1,9 +1,14 @@
 .footer {
   background: #161715;
   background: linear-gradient(#161715 1%, #bbbbad 30%, #dededd 35%);
-  padding: 2rem 1rem .5rem;
+  padding: 2rem 1rem 0.5rem;
   color: #161715;
-  font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1.75rem;
+  }
 }
 
 .footer__contact {
@@ -18,18 +23,24 @@
 
 .footer__contact--phone img {
   vertical-align: middle;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .footer__contact--email img {
-  padding: .5rem;
+  padding: 0.5rem;
   vertical-align: middle;
 }
 
 .footer__icons {
-  background: url("../assets/footer-icons.svg") repeat-x center/40%;
-  height: 4rem;
+  background: url("../assets/footer-icons.svg") repeat-x center;
+  height: 5rem;
   margin: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer__icons {
+    background: url("../assets/footer-icons.svg") repeat-x center/40%;
+  }
 }
 
 .footer__window-icons {
@@ -37,7 +48,6 @@
 }
 
 .footer__list {
-  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
@@ -48,13 +58,19 @@
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .footer__list {
+    font-size: 1.25rem;
+  }
+}
+
 .footer__list--item {
   align-items: center;
-  padding: 1rem 1rem .5rem;
+  padding: 1rem 1rem 0.5rem;
 }
 
 .footer__author {
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin: 1rem 0 0;
   padding: 0;
 }
