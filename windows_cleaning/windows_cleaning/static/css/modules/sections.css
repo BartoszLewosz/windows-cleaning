@@ -59,9 +59,37 @@
 }
 
 .btn-menu {
-  background: hotpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
   position: absolute;
   right: 2rem;
   height: 128px;
   width: 128px;
+}
+
+.btn-menu__burger {
+  width: 64px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.btn-menu__burger::before, .btn-menu__burger::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 6px;
+  background: #fff;
+  border-radius: 4px;
+  transition: all .5s ease-in-out;
+}
+
+.btn-menu__burger::before {
+  transform: translateY(-16px);
+}
+
+.btn-menu__burger::after {
+  transform: translateY(16px);
 }

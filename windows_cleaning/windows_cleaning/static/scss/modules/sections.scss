@@ -49,9 +49,34 @@
     }
 }
 .btn-menu {
-    background: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
     position: absolute;
     right: 2rem;
     height: 128px;
     width: 128px;
+    &__burger {
+        width: 64px;
+        height: 6px;
+        background: #ffffff;
+        border-radius: 4px;
+    }
+    &__burger::before,
+    &__burger::after {
+        position: absolute;
+        content: '';
+        width: 64px;
+        height: 6px;
+        background: #fff;
+        border-radius: 4px;
+        transition: all .5s ease-in-out;
+    }
+    &__burger::before {
+        transform: translateY(-16px);
+    }
+    &__burger::after {
+        transform: translateY(16px);
+    }
 }
