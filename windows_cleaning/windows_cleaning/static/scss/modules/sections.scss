@@ -1,5 +1,14 @@
 @import "colors";
 @import "media";
+
+@mixin burger-line {
+    width: 64px;
+    height: 6px;
+    background-color: $icon-white;
+    border-radius: 4px;
+    position: absolute;
+}
+
 .sections {
     max-width: 1024px;
     margin: 0 auto;
@@ -48,35 +57,41 @@
         }
     }
 }
-.btn-menu {
+.burger {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: green;
     position: absolute;
+    cursor: pointer;
     right: 2rem;
+    border: 0;
+    background: transparent;
+}
+.burger__box {
     height: 128px;
     width: 128px;
-    &__burger {
-        width: 64px;
-        height: 6px;
-        background: #ffffff;
-        border-radius: 4px;
-    }
-    &__burger::before,
-    &__burger::after {
-        position: absolute;
-        content: '';
-        width: 64px;
-        height: 6px;
-        background: #fff;
-        border-radius: 4px;
-        transition: all .5s ease-in-out;
-    }
-    &__burger::before {
-        transform: translateY(-16px);
-    }
-    &__burger::after {
-        transform: translateY(16px);
-    }
+    display: inline-block;
+    position: relative;
 }
+
+.burger__inner {
+    @include burger-line;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger__inner::before,
+.burger__inner::after {
+    @include burger-line;
+
+    content: '';
+    left: 0;
+}
+.burger__inner::before {
+    top: 1rem;
+}
+.burger__inner::after {
+    top: -1rem;
+}
+
