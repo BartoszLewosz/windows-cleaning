@@ -105,3 +105,15 @@
 .burger__inner::after {
   top: -1rem;
 }
+
+.burger--active .burger__inner {
+  background: transparent;
+}
+
+.burger--active .burger__inner::before {
+  transform: translate(16px, -16px) rotate(45deg);
+}
+
+.burger--active .burger__inner::after {
+  transform: translate(16px, 16px) rotate(-45deg);
+}
