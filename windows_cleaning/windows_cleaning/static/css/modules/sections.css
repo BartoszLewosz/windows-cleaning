@@ -48,7 +48,7 @@
   }
   .top-nav__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-template-rows: 8rem;
@@ -59,10 +59,6 @@
 }
 
 .burger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
   cursor: pointer;
   right: 2rem;
   border: 0;
