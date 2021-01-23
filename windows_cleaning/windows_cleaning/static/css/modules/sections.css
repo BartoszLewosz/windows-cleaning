@@ -48,7 +48,7 @@
   }
   .top-nav__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-template-rows: 8rem;
