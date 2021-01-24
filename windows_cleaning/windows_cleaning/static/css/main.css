@@ -471,7 +471,7 @@ template {
 
 .burger__inner {
   width: 64px;
-  height: 6px;
+  height: 4px;
   background-color: #C7BEBD;
   border-radius: 4px;
   position: absolute;
@@ -479,17 +479,19 @@ template {
   top: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
+  transition: all .5s ease-in-out;
 }
 
 .burger__inner::before,
 .burger__inner::after {
   width: 64px;
-  height: 6px;
+  height: 4px;
   background-color: #C7BEBD;
   border-radius: 4px;
   position: absolute;
   content: "";
   left: 0;
+  transition: all .5s ease-in-out;
 }
 
 .burger__inner::before {
@@ -505,11 +507,13 @@ template {
 }
 
 .burger--active .burger__inner::before {
-  transform: translate(16px, -16px) rotate(45deg);
+  transform: rotate(45deg) translate(-10px, -12px);
+  transition: all .5s ease-in-out;
 }
 
 .burger--active .burger__inner::after {
-  transform: translate(16px, 16px) rotate(-45deg);
+  transform: rotate(-45deg) translate(-10px, 12px);
+  transition: all .5s ease-in-out;
 }
 
 .burger:focus {
