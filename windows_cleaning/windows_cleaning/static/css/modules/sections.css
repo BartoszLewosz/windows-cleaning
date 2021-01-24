@@ -49,19 +49,21 @@
     margin: 0 auto;
   }
   .top-nav__list {
-    display: none;
+    transform: translateY(-128px);
   }
-  .top-nav__list--active {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    grid-template-rows: 8rem;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 1rem;
-  }
+}
+
+.top-nav__list--active {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 8rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  transform: translateY(0px);
 }
 
 .burger {
@@ -85,9 +87,10 @@
   background-color: #C7BEBD;
   border-radius: 4px;
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 50%;
   transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 
 .burger__inner::before,

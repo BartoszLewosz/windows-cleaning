@@ -1,3 +1,8 @@
+.burger__box:hover {
+  color: #C7BEBD;
+  border-bottom: 2px solid #AF8108;
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -44,6 +49,5 @@ a:active {
 .top-nav__link:hover {
   border: 1px solid #AF8108;
   border-radius: 4px;
-  padding: 4px;
   color: #C7BEBD;
 }

@@ -1,4 +1,8 @@
 @import "colors";
+.burger__box:hover {
+    color: $icon-white;
+    border-bottom: 2px solid $gold;
+}
 a {
     text-decoration: none;
     outline: none;
@@ -37,7 +41,6 @@ a {
         &:hover {
             border: 1px solid $gold;
             border-radius: 4px;
-            padding: 4px;
             color: $icon-white;
         }
     }
