@@ -455,7 +455,9 @@ template {
 .burger {
   cursor: pointer;
   right: 2rem;
+  font-size: 100%;
   border: 0;
+  padding: 0;
   background: transparent;
   position: absolute;
 }
@@ -510,13 +512,12 @@ template {
   transform: translate(16px, 16px) rotate(-45deg);
 }
 
-.burger__box:focus {
-  border: 1px solid #AF8108;
+.burger:focus {
+  outline: 1px solid #AF8108;
 }
 
 a {
   text-decoration: none;
-  outline: none;
 }
 
 a:link {

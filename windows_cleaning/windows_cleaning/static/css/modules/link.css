@@ -1,10 +1,9 @@
-.burger__box:focus {
-  border: 1px solid #AF8108;
+.burger:focus {
+  outline: 1px solid #AF8108;
 }
 
 a {
   text-decoration: none;
-  outline: none;
 }
 
 a:link {

@@ -1,10 +1,9 @@
 @import "colors";
-.burger__box:focus {
-    border: 1px solid $gold;
+.burger:focus {
+    outline: 1px solid $gold;
 }
 a {
     text-decoration: none;
-    outline: none;
     &:link {
         color: inherit;
     }
