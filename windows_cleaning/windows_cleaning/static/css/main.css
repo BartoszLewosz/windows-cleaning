@@ -431,9 +431,22 @@ template {
     flex-direction: row;
     justify-content: space-evenly;
     max-width: 1024px;
+    height: 124px;
     margin: 0 auto;
+    transition: all 0.5s ease-in-out;
   }
   .top-nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 8rem;
+    list-style-type: none;
+    height: 124px;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    transition: all 0.5s ease-in-out;
     transform: translateY(-128px);
   }
 }
@@ -449,6 +462,7 @@ template {
   margin: 0;
   padding: 0;
   gap: 1rem;
+  transition: all 0.5s ease-in-out;
   transform: translateY(0px);
 }
 
@@ -479,7 +493,7 @@ template {
   top: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .burger__inner::before,
@@ -491,7 +505,7 @@ template {
   position: absolute;
   content: "";
   left: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .burger__inner::before {
@@ -508,12 +522,12 @@ template {
 
 .burger--active .burger__inner::before {
   transform: rotate(45deg) translate(-10px, -12px);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .burger--active .burger__inner::after {
   transform: rotate(-45deg) translate(-10px, 12px);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .burger:focus {
