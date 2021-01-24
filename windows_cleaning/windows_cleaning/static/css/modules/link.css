@@ -1,6 +1,5 @@
-.burger__box:hover {
-  color: #C7BEBD;
-  border-bottom: 2px solid #AF8108;
+.burger__box:focus {
+  border: 1px solid #AF8108;
 }
 
 a {
