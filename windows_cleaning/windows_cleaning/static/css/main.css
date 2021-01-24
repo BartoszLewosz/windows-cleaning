@@ -433,19 +433,24 @@ template {
 
 @media (min-width: 768px) {
   .top-nav {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     max-width: 1024px;
     margin: 0 auto;
   }
   .top-nav__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-template-rows: 8rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+  .top-nav__list--item {
+    padding: 1.5rem;
   }
 }
 
