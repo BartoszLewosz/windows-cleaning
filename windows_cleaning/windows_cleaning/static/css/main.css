@@ -440,6 +440,9 @@ template {
     margin: 0 auto;
   }
   .top-nav__list {
+    display: none;
+  }
+  .top-nav__list--active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -448,9 +451,7 @@ template {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  .top-nav__list--item {
-    padding: 1.5rem;
+    gap: 1rem;
   }
 }
 
@@ -459,6 +460,7 @@ template {
   right: 2rem;
   border: 0;
   background: transparent;
+  position: absolute;
 }
 
 .burger__box {
@@ -486,7 +488,7 @@ template {
   background-color: #C7BEBD;
   border-radius: 4px;
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
 }
 
@@ -525,7 +527,6 @@ a:visited {
 
 a:focus {
   border: 1px solid #AF8108;
-  border-radius: 4px;
 }
 
 a:hover {

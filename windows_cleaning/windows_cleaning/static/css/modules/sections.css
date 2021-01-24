@@ -49,6 +49,9 @@
     margin: 0 auto;
   }
   .top-nav__list {
+    display: none;
+  }
+  .top-nav__list--active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -57,9 +60,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  .top-nav__list--item {
-    padding: 1.5rem;
+    gap: 1rem;
   }
 }
 
@@ -68,6 +69,7 @@
   right: 2rem;
   border: 0;
   background: transparent;
+  position: absolute;
 }
 
 .burger__box {
@@ -95,7 +97,7 @@
   background-color: #C7BEBD;
   border-radius: 4px;
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
 }
 

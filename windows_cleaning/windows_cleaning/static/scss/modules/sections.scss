@@ -48,26 +48,27 @@
         max-width: 1024px;
         margin: 0 auto;
         &__list {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            align-items: center;
-            justify-items: center;
-            grid-template-rows: 8rem;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            &--item {
-                padding: 1.5rem;
+            display: none;
+            &--active {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                align-items: center;
+                justify-items: center;
+                grid-template-rows: 8rem;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                gap: 1rem;
             }
         }
     }
 }
 .burger {
-  
     cursor: pointer;
     right: 2rem;
     border: 0;
     background: transparent;
+    position: absolute;
 }
 .burger__box {
     height: 128px;
@@ -87,7 +88,7 @@
 .burger__inner::after {
     @include burger-line;
 
-    content: '';
+    content: "";
     left: 0;
 }
 .burger__inner::before {
