@@ -451,6 +451,18 @@ template {
   }
 }
 
+.top-nav__header {
+  align-self: center;
+  position: absolute;
+  font-size: 2.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.top-nav__header--hide {
+  transform: translateY(-128px);
+  transition: all 0.5s ease-in-out;
+}
+
 .top-nav__list--active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
