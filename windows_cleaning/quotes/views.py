@@ -11,7 +11,7 @@ def quote_req(request):
         form = QuoteForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/quote/?submitted=True')
+            return HttpResponseRedirect('/quote?submitted=True')
     else:
         form = QuoteForm()
         if 'submitted' in request.GET:
