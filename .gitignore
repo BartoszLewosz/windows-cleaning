@@ -1,3 +1,4 @@
+.env
 django_2.2
 sources.txt
 *.pyc
