@@ -700,7 +700,13 @@ a:active {
   padding: 1rem 1rem 0.5rem;
 }
 
+.footer__authors {
+  text-align: center;
+}
+
 .footer__author {
+  display: inline-block;
+  text-align: center;
   font-size: 0.7rem;
   margin: 1rem 0 0;
   padding: 0;
