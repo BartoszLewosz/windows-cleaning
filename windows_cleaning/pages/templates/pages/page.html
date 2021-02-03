@@ -18,20 +18,38 @@
 </section>
 {% endblock hero %}
 
-
-
-{% block sidenav %}
-{% for page in page_list %}
-
-{% endfor %}
-{% endblock sidenav %}
-
 {% block content %}
-{% autoescape off %}
-{{ content }}
-{% endautoescape %}
-<!-- 
-<p class="page-update">
-    Page last updated: {{ last_updated|date:'l, dS F Y' }}
-</p> -->
+<section class="sections">
+    <nav class="sections__element">
+        <div class="sections__about">
+            <header class="sections__header" id="about">About</header>
+            <p class="sections__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+                officiis dolor accusamus facilis molestiae sequi iusto, debitis repellat laboriosam sit, aliquid
+                fugit vero excepturi tempora ab. Itaque iusto commodi repellat veritatis autem illum architecto
+                placeat deserunt porro harum quis fuga ullam omnis dignissimos, repudiandae dolore nisi numquam
+                inventore rerum magni.</p>
+        </div>
+        <div class="sections__services">
+            <header class="sections__header" id="services">Services</header>
+            <ul class="sections__services--list">
+                <li class="sections__services--list-item">One off or regular window cleaning 6 or 12 weekly</li>
+                <li class="sections__services--list-item">Internal windows</li>
+                <li class="sections__services--list-item">Conservatory roofs</li>
+                <li class="sections__services--list-item">Gutters, fascias & soffits</li>
+                <li class="sections__services--list-item">UPVC cladding</li>
+                <li class="sections__services--list-item">Builders clean</li>
+                <li class="sections__services--list-item">Glass restoration (removal of hard water deposits,
+                    alkali
+                    residues, haze & other atmospheric pollutents)</li>
+            </ul>
+        </div>
+        <div class="sections__contact">
+            <header class="sections__header"><a href="/contact">Contact</a></header>
+        </div>
+        <div class="sections__quote">
+            <header class="sections__header"><a href="/quote">Quote</a></header>
+        </div>
+    </nav>
+</section>
+
 {% endblock content %}
