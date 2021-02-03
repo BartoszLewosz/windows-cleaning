@@ -930,19 +930,33 @@ body {
 }
 
 .privacy-policy {
+  max-width: 1024px;
   text-align: justify;
   padding: 1rem;
   line-height: 1.5rem;
-  color: #161715;
-  background-color: #fff;
-  max-width: 1024px;
+  color: #C7BEBD;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .privacy-policy {
+    max-width: 1024px;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 2.25rem;
   }
+}
+
+.privacy-policy__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  line-height: 2.5rem;
+}
+
+.to-fill {
+  background-color: green;
 }
