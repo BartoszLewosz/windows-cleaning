@@ -868,7 +868,7 @@ input:focus {
 }
 
 .hero__title--quote {
-  color: #484D35;
+  color: #C7BEBD;
 }
 
 @media (min-width: 768px) {
@@ -927,4 +927,22 @@ body {
   font-family: Ubuntu;
   color: #858A88;
   background: #161715;
+}
+
+.privacy-policy {
+  text-align: justify;
+  padding: 1rem;
+  line-height: 1.5rem;
+  color: #161715;
+  background-color: #fff;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .privacy-policy {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
 }

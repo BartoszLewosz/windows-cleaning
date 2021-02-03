@@ -30,3 +30,20 @@ body {
     color: $font-gray;
     background: $background-dark;
 }
+
+.privacy-policy {
+    text-align: justify;
+    padding: 1rem;
+    line-height: 1.5rem;
+    color: $background-dark;
+    background-color: #fff;
+    max-width: 1024px;
+    margin: 0 auto;
+    @media (min-width: $tablet) {
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+}
+
+

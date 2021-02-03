@@ -11,6 +11,5 @@ class QuoteForm(ModelForm):
             'phone',
             'email',
             'web',
-            'description',
-            'job_file'
+            'description'
         ]

@@ -24,7 +24,7 @@
     }
     &__title {
         &--quote {
-            color: $font-green;
+        color: $icon-white;
             @media (min-width: $tablet) {
                 display: none;
             }

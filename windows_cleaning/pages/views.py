@@ -18,6 +18,9 @@ def index(request, pagename):
     # assert False
     # - uncomment to see error page and check local vars
     return render(request, 'pages/page.html', context)
+
+def privacy(request):
+    return render(request, 'pages/privacy.html')
     
 def contact(request):
     submitted = False
