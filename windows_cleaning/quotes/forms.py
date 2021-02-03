@@ -8,9 +8,6 @@ class QuoteForm(ModelForm):
         model = Quote
         fields = [
             'name',
-            'position',
-            'company',
-            'address',
             'phone',
             'email',
             'web',
