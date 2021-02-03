@@ -8,7 +8,7 @@ Contact me
 {% block hero %}
     <div class="hero__contact">
         <header class="hero__title">
-            <p class="hero__title--contact">Windows Clllleaning</p>
+            <p class="hero__title--contact">Windows Cleaning</p>
         </header>
         <div class="hero__menu">
             <img src="{% static 'assets/hero-menu.png' %}" class="hero__image" alt="menu." srcset="">
@@ -17,6 +17,7 @@ Contact me
 {% endblock hero %}
 
 {% block content %}
+<h1 class="contact__header">Contact Form</h1>
 {% if submitted %}
 <p class="success">
     Your message was submited successfully. <br>Thank you
