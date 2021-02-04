@@ -909,26 +909,6 @@ label {
   }
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  max-width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: Ubuntu;
-  color: #858A88;
-  background: #161715;
-}
-
 .privacy-policy {
   max-width: 1024px;
   text-align: justify;
@@ -959,4 +939,24 @@ h1 {
 
 .to-fill {
   background-color: green;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Ubuntu;
+  color: #858A88;
+  background: #161715;
 }
