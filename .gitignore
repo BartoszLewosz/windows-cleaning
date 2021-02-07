@@ -2,6 +2,7 @@
 django_2.2
 sources.txt
 *.pyc
+*.zip
 __pycache__
 db.sqlite3
 uploads
