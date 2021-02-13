@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['codelevee.pythonanywhere.com']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'windows_cleaning.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': 
+        'DIRS':
         [os.path.join(BASE_DIR, 'windows_cleaning/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,8 +79,13 @@ WSGI_APPLICATION = 'windows_cleaning.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'codelevee$OK-windows-cleaning_db',
+        'USER': 'codelevee',
+        'PASSWORD': 'OK-windows-cleaning_db',
+        'HOST': 'codelevee.mysql.pythonanywhere-services.com',
+
     }
 }
 
@@ -122,6 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/codelevee/mysite/static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'windows_cleaning/static'),
 ]
