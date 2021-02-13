@@ -81,10 +81,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': 'codelevee$OK-windows-cleaning_db',
-        'USER': 'codelevee',
-        'PASSWORD': 'OK-windows-cleaning_db',
-        'HOST': 'codelevee.mysql.pythonanywhere-services.com',
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
 
     }
 }
