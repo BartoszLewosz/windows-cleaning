@@ -1,0 +1,26 @@
+@import "colors";
+@import "media";
+.sections__services {
+    @media (min-width: $tablet) {
+        padding: 2rem;
+    }
+    &--list {
+        font-weight: 300;
+        @media (min-width: $tablet) {
+            columns: 2 200px;
+            column-gap: 4rem;
+            font-size: 1.25rem;
+        }
+        // Use before when assets uploaded to server. In browser sows that cannot find in 127.0.0.1:8000
+        &-item {
+            padding: 0.5rem;
+            &::marker {
+                content: "⦿";
+                color: $gold;
+            }
+            @media (min-width: $tablet) {
+                line-height: 2.25rem;
+            }
+        }
+    }
+}

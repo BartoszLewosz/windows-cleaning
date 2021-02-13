@@ -1,0 +1,51 @@
+.burger:focus {
+  outline: 1px solid #AF8108;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: #858A88;
+}
+
+a:focus {
+  border: 1px solid #AF8108;
+}
+
+a:hover {
+  color: #C7BEBD;
+  border-bottom: 2px solid #AF8108;
+}
+
+a:active {
+  border-bottom: 1px solid #AF8108;
+  border-radius: 4px;
+}
+
+.footer__link {
+  color: #20211a;
+}
+
+.footer__link:visited {
+  color: inherit;
+}
+
+.footer__link:hover {
+  color: #484D35;
+}
+
+.top-nav__link {
+  text-decoration: inherit;
+}
+
+.top-nav__link:hover {
+  border: 1px solid #AF8108;
+  border-radius: 4px;
+  color: #C7BEBD;
+}

@@ -1,0 +1,45 @@
+@import "colors";
+.burger:focus {
+    outline: 1px solid $gold;
+}
+a {
+    text-decoration: none;
+    &:link {
+        color: inherit;
+    }
+    &:visited {
+        color: $font-gray;
+    }
+    &:focus {
+        border: 1px solid $gold;
+    }
+    &:hover {
+        color: $icon-white;
+        border-bottom: 2px solid $gold;
+    }
+    &:active {
+        border-bottom: 1px solid $gold;
+        border-radius: 4px;
+    }
+}
+.footer {
+    &__link {
+        color: $dark-backgrd;
+        &:visited {
+            color: inherit;
+        }
+        &:hover {
+            color: $font-green;
+        }
+    }
+}
+.top-nav {
+    &__link {
+        text-decoration: inherit;
+        &:hover {
+            border: 1px solid $gold;
+            border-radius: 4px;
+            color: $icon-white;
+        }
+    }
+}

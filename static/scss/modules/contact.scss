@@ -1,0 +1,109 @@
+@import "colors";
+@import "media";
+
+.hero {
+    &__contact {
+        background: url("../assets/hero-bright.jpg") no-repeat center center;
+        max-width: 100%;
+        background-size: cover;
+        min-height: 468px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 50px;
+    }
+    &__menu {
+        grid-column-start: 3;
+        justify-self: end;
+        margin: 1rem;
+        @media (min-width: $tablet) {
+            display: none;
+        }
+    }
+    &__title {
+        &--contact {
+            color: $font-green;
+            @media (min-width: $tablet) {
+                display: none;
+            }
+        }
+    }
+}
+.contact {
+    &__header {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+.form {
+    padding: 3rem;
+    margin: 0 auto;
+    list-style-type: none;
+    font-size: 0.875rem;
+    @media (min-width: $tablet) {
+        width: 32rem;
+    }
+}
+label {
+    text-align: left;
+    color: $gold;
+    font-weight: bold;
+}
+.errorlist {
+    border: 1px solid red;
+    border-radius: 4px;
+    color: $gold;
+    font-size: 0.8rem;
+    margin: 0 0 4px;
+    text-align: center;
+    list-style-type: none;
+}
+.errorlist li::marker {
+    content: "⦿";
+    color: $gold;
+    padding: 2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border-radius: 4px;
+    margin: 0.5rem 0 1rem;
+}
+
+input {
+    height: 2.25rem;
+}
+input:focus {
+    height: 2.5rem;
+    border: 0.25rem solid $background-dark;
+}
+.submit-button {
+    font-size: 1rem;
+    @media (min-width: $tablet) {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+.submit-input:hover {
+    color: $gold;
+    font-weight: bolder;
+    border: 0.25rem solid $background-dark;
+}
+.submit-input:active {
+    color: $gold;
+    font-weight: bolder;
+}
+.submit-input:focus {
+    color: $gold;
+    font-weight: bolder;
+    background-color: $background-dark;
+}
+.success {
+    padding: 0.8rem;
+    margin: 0.5rem;
+    text-align: center;
+    color: $gold;
+    font-weight: bolder;
+    border: 2px solid $font-green;
+    border-radius: 4px;
+}

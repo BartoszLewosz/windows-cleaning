@@ -1,0 +1,69 @@
+.hero__quote {
+  background-image: url("../assets/hero-quote.jpg");
+  background-size: cover;
+  resize: both;
+  min-height: 468px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50px;
+}
+
+@media (min-width: 768px) {
+  .hero__quote {
+    min-height: 768px;
+  }
+}
+
+.hero__menu {
+  grid-column-start: 3;
+  justify-self: end;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero__menu {
+    display: none;
+  }
+}
+
+.hero__title--quote {
+  color: #C7BEBD;
+}
+
+@media (min-width: 768px) {
+  .hero__title--quote {
+    display: none;
+  }
+}
+
+.quote {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.quote__header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+label {
+  text-align: left;
+  color: #AF8108;
+  font-weight: bold;
+}
+
+.form {
+  padding: 3rem;
+  list-style-type: none;
+  font-size: .875rem;
+}
+
+#id_job_file {
+  color: #484D35;
+}
+
+@media (min-width: 768px) {
+  #id_job_file {
+    margin: 0 auto;
+  }
+}

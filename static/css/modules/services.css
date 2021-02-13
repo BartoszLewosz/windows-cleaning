@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@media (min-width: 768px) {
+  .sections__services {
+    padding: 2rem;
+  }
+}
+
+.sections__services--list {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .sections__services--list {
+    columns: 2 200px;
+    column-gap: 4rem;
+    font-size: 1.25rem;
+  }
+}
+
+.sections__services--list-item {
+  padding: 0.5rem;
+}
+
+.sections__services--list-item::marker {
+  content: "⦿";
+  color: #AF8108;
+}
+
+@media (min-width: 768px) {
+  .sections__services--list-item {
+    line-height: 2.25rem;
+  }
+}

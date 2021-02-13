@@ -1,0 +1,33 @@
+@import "modules/colors";
+@import "_normalize";
+@import "modules/hero";
+@import "modules/details";
+@import "modules/sections";
+@import "modules/link";
+@import "modules/services";
+@import "modules/footer";
+@import "modules/contact";
+@import "modules/quote";
+@import "modules/media";
+@import "modules/privacy";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Ubuntu;
+    color: $font-gray;
+    background: $background-dark;
+}

@@ -1,0 +1,43 @@
+.sections__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.sections__header {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.sections__content {
+  text-align: center;
+}
+
+.page-update {
+  font-size: 0.7rem;
+  color: #484D35;
+  text-align: center;
+}
+
+.top-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top-nav {
+    display: block;
+  }
+  .top-nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 8rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

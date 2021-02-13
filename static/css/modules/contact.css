@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.hero__contact {
+  background: url("../assets/hero-bright.jpg") no-repeat center center;
+  max-width: 100%;
+  background-size: cover;
+  min-height: 468px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50px;
+}
+
+.hero__menu {
+  grid-column-start: 3;
+  justify-self: end;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero__menu {
+    display: none;
+  }
+}
+
+.hero__title--contact {
+  color: #484D35;
+}
+
+@media (min-width: 768px) {
+  .hero__title--contact {
+    display: none;
+  }
+}
+
+.contact__header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form {
+  padding: 3rem;
+  margin: 0 auto;
+  list-style-type: none;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 32rem;
+  }
+}
+
+label {
+  text-align: left;
+  color: #AF8108;
+  font-weight: bold;
+}
+
+.errorlist {
+  border: 1px solid red;
+  border-radius: 4px;
+  color: #AF8108;
+  font-size: 0.8rem;
+  margin: 0 0 4px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.errorlist li::marker {
+  content: "⦿";
+  color: #AF8108;
+  padding: 2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  margin: 0.5rem 0 1rem;
+}
+
+input {
+  height: 2.25rem;
+}
+
+input:focus {
+  height: 2.5rem;
+  border: 0.25rem solid #161715;
+}
+
+.submit-button {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .submit-button {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.submit-input:hover {
+  color: #AF8108;
+  font-weight: bolder;
+  border: 0.25rem solid #161715;
+}
+
+.submit-input:active {
+  color: #AF8108;
+  font-weight: bolder;
+}
+
+.submit-input:focus {
+  color: #AF8108;
+  font-weight: bolder;
+  background-color: #161715;
+}
+
+.success {
+  padding: 0.8rem;
+  margin: 0.5rem;
+  text-align: center;
+  color: #AF8108;
+  font-weight: bolder;
+  border: 2px solid #484D35;
+  border-radius: 4px;
+}

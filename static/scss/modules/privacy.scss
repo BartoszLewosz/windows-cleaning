@@ -1,0 +1,28 @@
+@import "colors";
+@import "media";
+
+.privacy-policy {
+    max-width: 1024px;
+    text-align: justify;
+    padding: 1rem;
+    line-height: 1.5rem;
+    color: $icon-white;
+    margin: 0 auto;
+    @media (min-width: $tablet) {
+        max-width: 1024px;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+h1 {
+    line-height: 2.5rem;
+}
+.to-fill {
+    background-color: green;
+}

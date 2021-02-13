@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/colors.scss",
+		"../scss/hero.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,OAAO,CAAC,oFAAI;AEFZ,AAAA,KAAK,CAAC;EACF,UAAU,EAAE,KAAK;EACjB,KAAK,EAAE,UAAU;CACpB;;AFCD,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,CAAC;AACD,CAAC,CAAC,MAAM;AACR,CAAC,CAAC,KAAK,CAAC;EACJ,UAAU,EAAE,OAAO;CACtB;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,UAAU;CACpB"
+}
