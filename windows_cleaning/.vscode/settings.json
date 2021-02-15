@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/bartosz/Documents/dev/Olgierd Window Cleaning/django_2.2/bin/python",
+    "python.pythonPath": "/home/bartosz/Documents/development/OK-windows/venv/bin/python",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "git.ignoreLimitWarning": true

@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['codelevee.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'windows_cleaning.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'NAME': config('NAME'),
+        # 'USER': config('USER'),
+        # 'PASSWORD': config('PASSWORD'),
+        # 'HOST': config('HOST'),
 
     }
 }
@@ -131,3 +131,6 @@ STATIC_ROOT = '/home/codelevee/mysite/static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'windows_cleaning/static'),
 ]
+
+EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
+SENDGRID_API_KEY = config('SENDGRID_API_KEY')
