@@ -24,9 +24,10 @@ Contact me
 </p>
 {% else %}
 <form class="form" action="" method="post" novalidate>
+    {% csrf_token %}
     {{ form.as_ul }}
     <p class="submit-button"><input class="submit-input" type="submit" value="Submit"></p>
-    {% csrf_token %}
+    
 </form>
 {% endif %}
 {% endblock content %}
