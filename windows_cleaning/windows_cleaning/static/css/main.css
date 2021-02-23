@@ -408,7 +408,7 @@ template {
 }
 
 .sections__content {
-  text-align: justify;
+  text-align: center;
   padding: 1rem;
   line-height: 1.5rem;
 }
