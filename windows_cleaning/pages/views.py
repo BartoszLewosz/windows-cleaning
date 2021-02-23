@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponseRedirect
-from django.core.mail import send_mail, get_connection
+from django.http import HttpResponseRedirect, HttpResponse
+from django.core.mail import send_mail, BadHeaderError
+from django.core.mail.message import EmailMessage
+from windows_cleaning.settings import DEFAULT_FROM_EMAIL
 
 from . models import Page
 from .forms import ContactForm
@@ -28,15 +30,20 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            # assert False
-            con = get_connection('django.core.mail.backends.console.EmailBackend')
-            send_mail(
-                cd['subject'],
-                cd['message'],
-                cd.get('email', 'noreply@example.com'),
-                ['siteowner@example.com'],
-                connection=con
-            )
+            subject = cd['subject']
+            message_body = cd['message']
+            client_email = cd['email']
+            try:
+                contact_form_email = EmailMessage(
+                    subject=subject,
+                    body = message_body,
+                    to=[DEFAULT_FROM_EMAIL],
+                    reply_to=[client_email]
+                )
+                contact_form_email.send(fail_silently=False)
+            except BadHeaderError:
+                return HttpResponse('Bad header')
+            
             return HttpResponseRedirect('/contact?submitted=True')
     else:
         form = ContactForm()

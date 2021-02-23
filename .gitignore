@@ -1,4 +1,6 @@
 .env
+/.vscode/
+venv
 django_2.2
 sources.txt
 *.pyc
