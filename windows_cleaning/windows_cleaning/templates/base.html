@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Document
+        {% endblock title %}
+    </title>
+    <meta property="og:title" content="OK Windows Cleaning company in Southampton"/>
+    <meta property="og:description" content="OK Windows Cleaning website. Offering quality, friendly & reliable service.">
+    ,<meta property="og:url" content="https://codelevee.pythonanywhere.com/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/BartoszLewosz/windows-cleaning/main/static/assets/OK_%20Windows_cleaning_og.png?token=AHKFDXQPRFV7BRWUPCMCMC3AG2MQQ">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'assets/window.png' %}"/>
+</head>
+
+<body>
+    <main class="main">
+        <div class="header">
+            <nav class="top-nav">
+                <div class="top-nav__header top-nav__header--js">Windows Cleaning</div>
+                <ul class="top-nav__list top-nav__list--js">
+                    <a class="top-nav__link" href="/">
+                        <li class="top-nav__list--item">home</li>
+                    </a>
+
+                    <a class="top-nav__link" href="/#about">
+                        <li class="top-nav__list--item">about</li>
+                    </a>
+
+                    <a class="top-nav__link" href="/#services">
+                        <li class="top-nav__list--item">services</li>
+                    </a>
+                    <a class="top-nav__link" href="/contact">
+                        <li class="top-nav__list--item">contact</li>
+                    </a>
+                    <a class="top-nav__link" href="/quote">
+                        <li class="top-nav__list--item">quote</li>
+                    </a>
+                </ul>
+                <button class="burger">
+                    <span class="burger__box">
