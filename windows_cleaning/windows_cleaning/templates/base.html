@@ -44,3 +44,83 @@
                 </ul>
                 <button class="burger">
                     <span class="burger__box">
+                        <span class="burger__inner"></span>
+                    </span>
+                </button>
+            </nav>
+
+
+        </div>
+
+        {% block hero %}
+        {% endblock hero %}
+        <section class="details">
+            <div class="details-wrapper">
+                <ul class="details__list">
+                    <a href="/">
+                        <li class="details__item"><img src="{% static 'assets/home.svg' %}" alt="phone." srcset="">
+                        </li>
+                    </a>
+                    <a href="tel:++44 77069 35402">
+                        <li class="details__item"><img src="{% static 'assets/telephone.svg' %}" alt="phone." srcset="">
+                        </li>
+                    </a>
+                    <a href="sms:++44 77069 35402+">
+                        <li class="details__item"><img src="{% static 'assets/message.svg' %}" alt="text." srcset="">
+                        </li>
+                    </a>
+                    <a href="mailto:olgierd2002@yahoo.com">
+                        <li class="details__item"><img src="{% static 'assets/envelope.svg' %}" alt="email." srcset="">
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+        {% block content %}
+
+
+
+        {% endblock content %}
+
+        <footer class="footer">
+            <ul class="footer__contact">
+                <li class="footer__contact--phone"><img src="{% static 'assets/telephone-dark.svg' %}" alt="phone."
+                        srcset=""><a class="footer__link" href="tel:++44 77069 35402">call</a></li>
+                <li class="footer__contact--email"><img src="{% static 'assets/envelope-dark.svg' %}" alt="email."
+                        srcset=""><a class="footer__link" href="mailto:olgierd2002@yahoo.com">email</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list--item"><a class="footer__link" href="/privacy">privacy policy</a></li>
+                <li class="footer__list--item"><a class="footer__link" href="/#about">about</a></li>
+                <li class="footer__list--item"><a class="footer__link" href="/#services">services</a></li>
+                <li class="footer__list--item"><a class="footer__link" href="/contact">contact</a></li>
+                <li class="footer__list--item"><a class="footer__link" href="/quote">quote</a></li>
+            </ul>
+
+            <div class="footer__icons">
+                <picture class="footer__window-icons">
+            </div>
+            <div class="footer__authors">
+                <p class="footer__author">Made by <a class="footer__link" href="https://bartoszlewosz.github.io">©
+                        Bartosz
+                        Lewosz</p></a><br>
+                <p class="footer__author">Icons from <a class="footer__link" href="https://www.flaticon.com/">Flaticon
+                </p></a>
+                <p class="footer__author">Made by<a class="footer__link"
+                        href="https://www.flaticon.com/authors/freepik"> freepik</p></a>
+                <span>Photo by <a class="footer__link"
+                        href="https://unsplash.com/@mrrrk_smith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John-Mark
+                        Smith</a> on <a class="footer__link"
+                        href="https://unsplash.com/s/photos/windows?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                Image by <a class="footer__link"
+                    href="https://pixabay.com/users/coyot-2009089/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4064358">Juraj
+                    Varga</a> from <a class="footer__link"
+                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4064358">Pixabay</a>
+            </div>
+        </footer>
+    </main>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
