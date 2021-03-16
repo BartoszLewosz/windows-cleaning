@@ -16,7 +16,7 @@ This is my first professional website as a self taught developer.
 - designed with [Figma](https://www.figma.com/)
 - email delivery service by [Sendgrid](https://sendgrid.com/)
 - database mysql (in production), sqlite3 (in development)
-- Deployed to and hosted by [pythonanywhere](https://pythonanywhere.com)
+- Deployed to and hosted by [pythonanywhere](https://www.dev-bar.tech/)
 
 **The webiste is published, but open for any changes**
 <table>
