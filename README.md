@@ -7,7 +7,7 @@
 This is my first professional website as a self taught developer.
 
 ## Site
-[Have a look! ](https://codelevee.pythonanywhere.com/)
+[Have a look! ](https://www.dev-bar.tech/)
 
 ## What's behind?
 - django==2.2.17
@@ -16,7 +16,7 @@ This is my first professional website as a self taught developer.
 - designed with [Figma](https://www.figma.com/)
 - email delivery service by [Sendgrid](https://sendgrid.com/)
 - database mysql (in production), sqlite3 (in development)
-- Deployed to and hosted by [pythonanywhere](https://www.dev-bar.tech/)
+- Deployed to and hosted by [pythonanywhere](https://codelevee.pythonanywhere.com/)
 
 **The webiste is published, but open for any changes**
 <table>
